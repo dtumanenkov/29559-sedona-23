@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Денис Туманенков](https://up.htmlacademy.ru/adaptive/23/user/29559).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
