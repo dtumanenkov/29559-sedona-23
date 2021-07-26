@@ -19,24 +19,78 @@
       </nav>
     </header>
     <main class="page-main">
+      <h1 class="visually-hidden">Обратная связь на сайте Седона!</h1>
       <section class="intro">
-        <h2 class="visually-hidden">Обратная связь на сайте Седона!</h2>
+        <h2 class="visually-hidden">Оставьте свой отзыв в форме ниже</h2>
         <!--Лучше сделать далее не img, а background!  Потом центровать описание-->
-        <img class="intro__logo-image" src="img/back-mobile.jpg" width="901" height="389" alt="Фотография каньона">
+        <img class="intro__logo-image" src="img/back-sedona.jpg" width="901" height="389" alt="Фотография каньона">
         <div class="intro__wrapper">
-          <p class="intro__overview-1">
-            <img class="intro__logo-image" src="img/welcome.svg" width="115" height="28" alt="">
-          </p>
-          <p class="intro__overview-2">
-            <img class="intro__logo-image" src="img/to_the_gorgeous.svg" width="107" height="18" alt="">
-          </p>
           <p class="intro__overview-3">
-            <img class="intro__logo-image" src="img/sedona.svg" width="282" height="49" alt="">
-          </p>
-          <p class="intro__overview-4">
-            <img class="intro__logo-image" src="img/Sedona-slogan.svg" width="173" height="46" alt="">
+            <img class="intro__logo-image" src="img/sedona.svg" width="229" height="39" alt="">
           </p>
         </div>
+      </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <header class="feedback__header">
+          <h3 class="feedback__slogan">Оставьте свой отзыв</h3>
+          <p class="feedback__overview">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </header>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="person">
+            <legend>Представьтесь:</legend>
+            <label>Имя:<input type="text" placeholder="Петр" name="name"></label>
+            <label>Фамилия:<input type="text" placeholder="Иванов" name="surname"></label>
+            <label>Отчество:<input type="text" placeholder="Александрович" name="middle-name" id="middle-name"></label>
+          </fieldset>
+          <fieldset class="phone-email">
+            <legend>Контактная информация:</legend>
+            <label>Контактный телефон*:<input type="tel" placeholder="Введите телефон" name="phone"></label>
+            <label>Электронная почта*:<input type="email" placeholder="Введите e-mail" name="email"></label>
+          </fieldset>
+          <fieldset class="impression">
+            <legend>Ваше общее впечатление:</legend>
+            <ul>
+              <li class="">
+                <input class="visually-hidden filter-input-radio" type="radio" name="radio" id="filter-positive" checked value="positive">
+                <label class="grid-type-label" for="filter-positive">Скорее положительное</label>
+              </li>
+              <li class="">
+                <input class="visually-hidden filter-input-radio" type="radio" name="radio" id="filter-negative" value="negative">
+                <label class="grid-type-label" for="filter-negative">Скорее отрицательное</label>
+              </li>
+              <li class="grid-type">
+                <input class="visually-hidden filter-input-radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
+                <label class="grid-type-label" for="filter-dont-know">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="landmark">
+            <legend class="caption">Посещенные достопримечательности:</legend>
+            <ul>
+              <li class="">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
+                <label class="filter-features-label" for="filter-slider">Мост Дьявола</label>
+              </li>
+              <li class="">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
+                <label class="filter-features-label" for="filter-advantages">Гора-Колокол</label>
+              </li>
+              <li class="">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
+                <label class="filter-features-label" for="filter-news">Слайд-парк</label>
+              </li>
+              <li class="">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
+                <label class="filter-features-label" for="filter-gallery">Красные скалы</label>
+              </li>
+              <li>
+                <label>Опишите свои эмоции:<textarea required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea></label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit" aria-label="Отправьте свой отзыв, нам приятно">Отправить отзыв</button>
+      </form>
       </section>
     </main>
     <footer class="page-footer">
