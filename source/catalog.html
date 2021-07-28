@@ -11,82 +11,6 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Фото и видео городка Седона!</h1>
-      <section class="intro">
-        <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <!--Лучше сделать далее не img, а background!  Потом центровать описание-->
-        <img class="intro__logo-image" src="img/back-sedona.jpg" width="901" height="389" alt="Фотография каньона">
-        <div class="intro__wrapper">
-          <p class="intro__overview-3">
-            <img class="intro__logo-image" src="img/sedona.svg" width="229" height="39" alt="">
-          </p>
-        </div>
-      </section>
-      <section class="multimedia-content">
-        <h2 class="visually-hidden">Медиа контент городка Седона</h2>
-        <header class="multimedia-content__header">
-          <h3 class="multimedia-content__slogan">Фото и видео</h3>
-          <p class="multimedia-content__overview">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
-        </header>
-        <ul>
-          <li>
-            <img src="img/photo-1.jpg" width="280" height="280" alt="Дорога в пустыне">
-            <h4>Неродные просторы</h4>
-            <p>Автор фото:<span>Борис</span></p>
-            <div class="likes">1350</div>
-          </li>
-          <li>
-            <img src="img/photo-2.jpg" width="280" height="280" alt="Кактус в пустыне">
-            <h4>Местная растительность</h4>
-            <p>Автор фото:<span>Сергей</span></p>
-            <div class="likes">143</div>
-          </li>
-          <li>
-            <img src="img/photo-3.jpg" width="280" height="280" alt="Дорога в горах">
-            <h4>Дорога на север</h4>
-            <p>Автор фото:<span>Петр</span></p>
-            <div class="likes">96</div>
-          </li>
-          <li>
-            <img src="img/photo-4.jpg" width="280" height="280" alt="Дорога в пустыне">
-            <h4>Мост дьявола</h4>
-            <p>Автор фото:<span>Антон</span></p>
-            <div class="likes">254</div>
-          </li>
-          <div class="videoplayer-container">
-            <h4>Все еще сомневаетесь?</h4>
-            <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <div class="videoplayer"></div>
-            <div class="videoplayer-controls">
-              <button class="play"></button>
-              <button class="subtitles"></button>
-              <button class="fullscreen"></button>
-            </div>
-          </div>
-        </ul>
-      </section>
-    </main>
-    <!DOCTYPE html>
-<html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона - обратная связь</title>
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logotype.svg" width="102" height="84" alt="Логотип города Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--current" href="#">Главная</a>
@@ -106,83 +30,101 @@
         <img class="page-header__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона!">
       </div>
       <div class="page-header__heading">
-        <h1 class="visually-hidden">Обратная связь на сайте Седона!</h1>
-        <strong>Оставьте свой отзыв</strong>
-        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <h1 class="visually-hidden">Фото и видео городка Седона!</h1>
+        <strong>Фото и видео</strong>
+        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </header>
-    <main class="page-main">      
-      <section class="feedback">
-        <h2 class="visually-hidden">Обратная связь</h2>
-        <form class="feedback__form default-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--person">
-            <legend class="default-form__title">Представьтесь:</legend>
-            <ul>
-              <li>
-                <label class="default-form__label">Имя:<input class="default-form__input" type="text" placeholder="Петр" name="name"></label>
-              </li>
-              <li>
-                <label class="default-form__label">Фамилия:<input class="default-form__input" type="text" placeholder="Иванов" name="surname"></label>
-              </li>
-              <li>
-                <label class="default-form__label">Отчество:<input class="default-form__input" type="text" placeholder="Александрович" name="middle-name"></label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--contacts">
-            <legend class="default-form__title">Контактная информация:</legend>
-            <ul>
-              <li>
-                <label class="default-form__label">Контактный телефон*:<input class="default-form__input" type="tel" placeholder="Введите телефон" name="phone"></label>
-              </li>
-              <li>
-                <label class="default-form__label">Электронная почта*:<input class="default-form__input" type="email" placeholder="Введите e-mail" name="email"></label>
-              </li>
-            </ul>  
-          </fieldset>
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--impression">
-            <legend class="default-form__title">Ваше общее впечатление:</legend>
-            <ul>
-              <li>
-                <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-positive" checked value="positive">
-                <label class="default-form__label" for="filter-positive">Скорее положительное</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-negative" value="negative">
-                <label class="default-form__label" for="filter-negative">Скорее отрицательное</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
-                <label class="default-form__label" for="filter-dont-know">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--landmark">
-            <legend class="default-form__title">Посещенные достопримечательности:</legend>
-            <ul>
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
-                <label class="default-form__label" for="filter-slider">Мост Дьявола</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
-                <label class="default-form__label" for="filter-advantages">Гора-Колокол</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
-                <label class="default-form__label" for="filter-news">Слайд-парк</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
-                <label class="default-form__label" for="filter-gallery">Красные скалы</label>
-              </li>
-              <li>
-                <label class="default-form__label">Опишите свои эмоции:<textarea class="default-form__textarea" required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea></label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="default-form__button feedback__button button" type="submit" aria-label="Отправьте свой отзыв, нам приятно">Отправить отзыв</button>
-      </form>
+    <main class="page-main">
+      <section class="gallery">
+        <h2 class="visually-hidden">Медиа контент городка Седона</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <figure>
+              <a class="gallery__image" href="#">
+                <img src="#" width="280" height="280" alt="Дорога в пустыне">
+              </a>
+              <figcaption class="gallery__text">
+                <h3 class="gallery__title">Неродные просторы</h3>
+                <p class="gallery__author">Автор фото:<span>Борис</span></p>
+                <button class="gallery__like" type="button" title="Нравится">
+                  <span class="visually-hidden">Нравится</span>
+                  <span class="gallery__like-count">1350</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure>
+              <a class="gallery__image" href="#">
+                <img src="#" width="280" height="280" alt="Дорога в пустыне">
+              </a>
+              <figcaption class="gallery__text">
+                <h3 class="gallery__title">Местная растительность</h3>
+                <p class="gallery__author">Автор фото:<span>Сергей</span></p>
+                <button class="gallery__like" type="button" title="Нравится">
+                  <span class="visually-hidden">Нравится</span>
+                  <span class="gallery__like-count">143</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure>
+              <a class="gallery__image" href="#">
+                <img src="#" width="280" height="280" alt="Дорога в пустыне">
+              </a>
+              <figcaption class="gallery__text">
+                <h3 class="gallery__title">Дорога на север</h3>
+                <p class="gallery__author">Автор фото:<span>Петр</span></p>
+                <button class="gallery__like" type="button" title="Нравится">
+                  <span class="visually-hidden">Нравится</span>
+                  <span class="gallery__like-count">96</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure>
+              <a class="gallery__image" href="#">
+                <img src="#" width="280" height="280" alt="Дорога в пустыне">
+              </a>
+              <figcaption class="gallery__text">
+                <h3 class="gallery__title">Мост дьявола</h3>
+                <p class="gallery__author">Автор фото:<span>Антон</span></p>
+                <button class="gallery__like" type="button" title="Нравится">
+                  <span class="visually-hidden">Нравится</span>
+                  <span class="gallery__like-count">254</span>
+                </button>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="visually-hidden">Видеопрезентация</h2>
+        <strong>Все еще сомневаетесь?</strong>
+        <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__player">
+          <img class="video__picture" src="#" alt="">
+          <div class="video__controls">
+            <div class="video__range-control">
+              <div class="video__range"></div>
+              <div class="video__toggle"></div>
+            </div>
+            <div class="video__buttons-control">
+              <button class="play" type="button" title="Проиграть еще раз">
+                <span class="visually-hidden">Проиграть еще раз</span>
+              </button>
+              <button class="play" type="button" title="Включить субтитры">
+                <span class="visually-hidden">Включить субтитры</span>
+              </button>
+              <button class="play" type="button" title="Развернуть во весь экран">
+                <span class="visually-hidden">Развернуть во весь экран</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -214,8 +156,5 @@
         </p>
       </div>
     </footer>
-  </body>
-</html>
-
   </body>
 </html>
