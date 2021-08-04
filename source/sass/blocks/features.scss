@@ -1,0 +1,23 @@
+.features {
+  &__item {
+    background-color: $basic-white;
+  }
+
+  &__title {
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: $basic-black;
+  }
+
+  &__text {
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 21px;
+    color: $basic-black;
+  }
+}

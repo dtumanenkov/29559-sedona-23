@@ -1,0 +1,12 @@
+.site-list {
+  width: 320px;
+
+  &__item {
+    height: 55px;
+    background-color: $basic-blue;
+  }
+
+  &__link {
+    color: $basic-white;
+  }
+}
