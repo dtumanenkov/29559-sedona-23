@@ -2,15 +2,27 @@
   height: 223px;
 
   &__toggle {
-    display: block;
     width: 23px;
     height: 22px;
-    border: 1px solid $basic-black;
+    background-color: $basic-white;
+    background-image: url("../../img/burger.svg");
+    background-repeat: no-repeat;
+    border: 0;
+  }
+
+  &__toggle--close {
+    width: 23px;
+    height: 23px;
+    background-color: $basic-blue;
+    background-image: url("../../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    border: 0;
   }
 
   &__list {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
   }
 }

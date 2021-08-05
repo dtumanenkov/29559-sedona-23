@@ -1,0 +1,16 @@
+.page-footer {
+  min-width: 320px;
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+
+  &__hashtag {
+    text-transform: uppercase;
+    color: $basic-black;
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
