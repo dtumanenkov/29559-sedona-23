@@ -1,10 +1,10 @@
 .copyright {
+  text-transform: uppercase;
 
   &__link {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    text-transform: uppercase;
     line-height: 26px;
     color: $basic-black;
   }

@@ -1,5 +1,5 @@
 .page-footer {
-  min-width: 320px;
+  width: 320px;
 
   &__wrapper {
     margin: 0 auto;
@@ -8,9 +8,13 @@
   &__hashtag {
     text-transform: uppercase;
     color: $basic-black;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
+
+    span {
+      margin: 29px 78px 29px 78px;
+    }
   }
 }

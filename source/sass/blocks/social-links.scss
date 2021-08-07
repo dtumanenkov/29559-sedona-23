@@ -1,8 +1,10 @@
 .social-links {
+  text-align: center;
 
   &__item {
     width: 46px;
     height: 48px;
     background-color: $basic-blue;
+    display: inline-block;
   }
 }

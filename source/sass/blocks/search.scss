@@ -3,7 +3,7 @@
   min-height: 287px;
 
   &__caption {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
     font-weight: 700;
     text-transform: uppercase;
@@ -12,16 +12,18 @@
   }
 
   &__overview {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 24px;
     color: $dark-gray;
+    margin-bottom: 27px;
+    margin-top: 20px;
   }
 
   &__btn {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
     font-weight: 700;
     text-transform: uppercase;

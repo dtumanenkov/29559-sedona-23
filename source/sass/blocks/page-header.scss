@@ -1,35 +1,43 @@
 .page-header {
-  position: relative;
-  height: 56px;
-  min-width: 320px;
+  min-height: 84px;
+  width: 320px;
 
   &__logo {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 51px);
+    display: block;
+    width: 102px;
+    height: 84px;
+    margin: 0 auto;
+  }
+
+  &__logo-image {
+    margin: 0 auto;
   }
 
   &__nav {
-    position: absolute;
-    top: 17px;
-    right: 17px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
   }
 
   &__greeting {
-    background-color: $basic-white;
+    width: 320px;
+    height: 389px;
+    background: $basic-white url("../../img/back-mobile.jpg") no-repeat center top;
+  }
+
+  &__image {
+    padding-left: 19px;
   }
 
   &__heading {
     background-color: $basic-white;
+    text-align: center;
 
     strong {
       text-transform: uppercase;
       color: $basic-black;
-      font-family: "PT Sans";
+      font-family: "PT Sans", "Arial", sans-serif;
       font-weight: 700;
       font-size: 18px;
       line-height: 26px;
