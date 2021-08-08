@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - обратная связь</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -28,7 +29,7 @@
         </ul>
       </nav>
       <div class="page-header__greeting">
-        <img class="page-header__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона!">
+        <img class="page-header__image" src="img/Sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепный город Седона!">
       </div>
       <div class="page-header__heading">
         <h1 class="visually-hidden">Обратная связь на сайте Седона!</h1>
@@ -37,20 +38,20 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="feedback">
+      <section class="page-main__feedback feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback__form default-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--person">
             <legend class="default-form__title">Представьтесь:</legend>
             <ul>
               <li>
-                <label class="default-form__label">Имя:<input class="default-form__input" type="text" placeholder="Петр" name="name"></label>
+                <label class="default-form__label default-form__label--text">Имя*:<input class="default-form__input" type="text" placeholder="Петр" name="name"></label>
               </li>
               <li>
-                <label class="default-form__label">Фамилия:<input class="default-form__input" type="text" placeholder="Иванов" name="surname"></label>
+                <label class="default-form__label default-form__label--text">Фамилия*:<input class="default-form__input" type="text" placeholder="Иванов" name="surname"></label>
               </li>
               <li>
-                <label class="default-form__label">Отчество:<input class="default-form__input" type="text" placeholder="Александрович" name="middle-name"></label>
+                <label class="default-form__label default-form__label--text">Отчество:<input class="default-form__input" type="text" placeholder="Александрович" name="middle-name"></label>
               </li>
             </ul>
           </fieldset>

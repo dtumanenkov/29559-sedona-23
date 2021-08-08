@@ -3,7 +3,7 @@
 @import "global/normalize";
 @import "global/global";
 
-// Blocks
+// Blocks index.html
 @import "blocks/page";
 @import "blocks/page-header";
 @import "blocks/main-nav";
@@ -16,3 +16,7 @@
 @import "blocks/page-footer";
 @import "blocks/social-links";
 @import "blocks/copyright";
+
+// Blocks form.html
+@import "blocks/feedback";
+@import "blocks/default-form";

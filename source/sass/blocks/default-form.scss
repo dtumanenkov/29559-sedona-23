@@ -1,0 +1,44 @@
+.default-form {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 26px;
+  color: $dark-gray;
+
+  &__title {
+    font: inherit;
+    color: $basic-black;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__label {
+    font: inherit;
+    color: $dark-gray;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__label--text {
+    margin-left: 20px;
+  }
+
+  &__input {
+    font: inherit;
+    background-color: $input-background;
+    color: $basic-black;
+    font-weight: 700;
+    font-size: 18px;
+    border: 0;
+    height: 58px;
+    margin-bottom: 20px;
+    padding-left: 21px;
+    margin-left: 10px;
+  }
+
+  &__radio {
+    margin-left: 50px;
+  }
+}
