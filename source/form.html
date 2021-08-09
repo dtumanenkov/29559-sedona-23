@@ -59,10 +59,10 @@
             <legend class="default-form__title">Контактная информация:</legend>
             <ul>
               <li>
-                <label class="default-form__label">Контактный телефон*:<input class="default-form__input" type="tel" placeholder="Введите телефон" name="phone"></label>
+                <label class="default-form__label--text">Контактный телефон*:<input class="default-form__input" type="tel" placeholder="Введите телефон" name="phone"></label>
               </li>
               <li>
-                <label class="default-form__label">Электронная почта*:<input class="default-form__input" type="email" placeholder="Введите e-mail" name="email"></label>
+                <label class="default-form__label--text">Электронная почта*:<input class="default-form__input" type="email" placeholder="Введите e-mail" name="email"></label>
               </li>
             </ul>
           </fieldset>
@@ -71,15 +71,15 @@
             <ul>
               <li>
                 <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-positive" checked value="positive">
-                <label class="default-form__label" for="filter-positive">Скорее положительное</label>
+                <label class="default-form__label--radio" for="filter-positive">Скорее положительное</label>
               </li>
               <li>
                 <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-negative" value="negative">
-                <label class="default-form__label" for="filter-negative">Скорее отрицательное</label>
+                <label class="default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
               </li>
               <li>
                 <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
-                <label class="default-form__label" for="filter-dont-know">Затрудняюсь ответить</label>
+                <label class="default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -88,19 +88,19 @@
             <ul>
               <li>
                 <input class="visually-hidden default-form__checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
-                <label class="default-form__label" for="filter-slider">Мост Дьявола</label>
+                <label class="default-form__label--checkbox" for="filter-slider">Мост Дьявола</label>
               </li>
               <li>
                 <input class="visually-hidden default-form__checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
-                <label class="default-form__label" for="filter-advantages">Гора-Колокол</label>
+                <label class="default-form__label--checkbox" for="filter-advantages">Гора-Колокол</label>
               </li>
               <li>
                 <input class="visually-hidden default-form__checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
-                <label class="default-form__label" for="filter-news">Слайд-парк</label>
+                <label class="default-form__label--checkbox" for="filter-news">Слайд-парк</label>
               </li>
               <li>
                 <input class="visually-hidden default-form__checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
-                <label class="default-form__label" for="filter-gallery">Красные скалы</label>
+                <label class="default-form__label--checkbox" for="filter-gallery">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -109,12 +109,12 @@
             <textarea class="default-form__textarea" required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea>
           </fieldset>
           <button class="default-form__button feedback__button button" type="submit">Отправить отзыв</button>
-          <div class="visually-hidden feedback__popup feedback__popup--failure">
+          <div class="feedback__popup feedback__popup--failure">
             <strong class="default-form__title">Что-то пошло не так!</strong>
             <p class="default-form__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <button class="default-form__button feedback__button button" type="submit">ок</button>
           </div>
-          <div class="visually-hidden feedback__popup feedback__popup--failure">
+          <div class="feedback__popup feedback__popup--failure">
             <strong class="default-form__title">Ваш отзыв отправлен!</strong>
             <p class="default-form__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
             <button class="default-form__button feedback__button button" type="submit">Закрыть окно</button>

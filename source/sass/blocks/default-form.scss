@@ -12,6 +12,7 @@
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    margin-bottom: 19px;
   }
 
   &__label {
@@ -23,6 +24,24 @@
 
   &__label--text {
     margin-left: 20px;
+  }
+
+  &__label--radio {
+    margin-left: 98px;
+    display: block;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  &__label--checkbox {
+    margin-left: 98px;
+    display: block;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
   }
 
   &__input {
@@ -40,5 +59,21 @@
 
   &__radio {
     margin-left: 50px;
+    height: 48px;
+  }
+
+  &__textarea {
+    width: 235px;
+    height: 160px;
+    font-weight: 700;
+    background-color: $input-background;
+    border: 0;
+    padding-left: 21px;
+    padding-right: 23px;
+  }
+
+  &__message {
+    padding-bottom: 29px;
+    padding-top: 35px;
   }
 }
