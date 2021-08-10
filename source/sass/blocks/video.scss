@@ -1,0 +1,78 @@
+.video {
+  strong {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    color: $basic-black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 36px;
+    margin-bottom: 37px;
+  }
+
+  &__picture {
+    width: 320px;
+    height: 201px;
+  }
+
+  &__controls {
+    width: 280px;
+    height: 111px;
+    margin-left: 20px;
+  }
+
+  &__range-control {
+    height: 45px;
+    background-color: $basic-black;
+    opacity: 0.6;
+  }
+
+  &__range {
+    width: 235px;
+    height: 3px;
+    margin-left: 22px;
+    margin-top: 22px;
+    background-color: $basic-white;
+    opacity: 0.2;
+  }
+
+  &__toggle {
+    width: 13px;
+    height: 13px;
+    background-color: $basic-white;
+    border-radius: 50%;
+  }
+
+  &__buttons-control {
+    height: 66px;
+    background-color: $input-background;
+  }
+
+  &__button {
+    border: 0;
+    background-color: $input-background;
+  }
+
+  &__button--replay {
+    width: 16px;
+    height: 20px;
+    background-image: url("../../img/replay.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__button--subs {
+    width: 32px;
+    height: 20px;
+    background-image: url("../../img/subtitles.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__button--fullscreen {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/fullscreen.svg");
+    background-repeat: no-repeat;
+  }
+}
