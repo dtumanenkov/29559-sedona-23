@@ -1,17 +1,17 @@
 .site-list {
   width: 320px;
-
-  &__item {
-    height: 55px;
-    background-color: $basic-blue;
-  }
-
-  &__link {
-    color: $basic-white;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 40px;
-  }
 }
+
+.site-list__item {
+  height: 55px;
+  background-color: $basic-blue;
+}
+
+.site-list__link {
+  color: $basic-white;
+  font-family: $base-font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+

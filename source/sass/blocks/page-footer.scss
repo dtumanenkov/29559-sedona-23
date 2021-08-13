@@ -1,24 +1,24 @@
 .page-footer {
   width: 320px;
-
-  &__wrapper {
-    margin: 0 auto;
-  }
-
-  &__hashtag {
-    text-transform: uppercase;
-    display: block;
-    color: $basic-black;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    margin-top: 77px;
-    margin-bottom: 34px;
-    text-align: center;
-
-    span {
-      margin: 29px 78px 29px 78px;
-    }
-  }
 }
+
+.page-footer__wrapper {
+  margin: 0 auto;
+}
+
+.page-footer__hashtag {
+  display: block;
+  color: $basic-black;
+  font-family: $base-font;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 77px;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.page-footer__hashtag-text {
+  margin: 29px 78px 29px 78px;
+}
+

@@ -2,25 +2,17 @@
   width: 320px;
   height: 350px;
   background-color: $basic-white;
-
-  &__image {
-    background-color: $background-gray;
-  }
-
-  &__marker {
-    width: 17px;
-    height: 17px;
-    background-color: $marker-blue;
-    border: 5px solid $basic-white;
-    border-radius: 50%;
-  }
-
-  address {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 26px;
-    color: $basic-black;
-  }
 }
+
+.map__image {
+  background-color: $background-gray;
+}
+
+.map__marker {
+  width: 17px;
+  height: 17px;
+  background-color: $marker-blue;
+  border: 5px solid $basic-white;
+  border-radius: 50%;
+}
+

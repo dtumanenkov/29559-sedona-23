@@ -1,87 +1,87 @@
 .default-form {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $base-font;
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
   line-height: 26px;
   color: $dark-gray;
+}
 
-  &__title {
-    font: inherit;
-    color: $basic-black;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 19px;
-  }
+.default-form__title {
+  color: $basic-black;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 19px;
+}
 
-  &__title--failure {
-    display: block;
-    text-align: center;
-    margin-top: 61px;
-    margin-bottom: 0px;
-  }
+.default-form__title--failure {
+  display: block;
+  text-align: center;
+  margin-top: 61px;
+  margin-bottom: 0;
+}
 
-  &__label {
-    font: inherit;
-    color: $dark-gray;
-    font-size: 14px;
-    font-weight: 400;
-  }
+.default-form__list {
+  @include ul-ol-reset;
+}
 
-  &__label--text {
-    margin-left: 20px;
-  }
+.default-form__label {
+  color: $dark-gray;
+  font-size: 14px;
+  font-weight: 400;
+}
 
-  &__label--radio {
-    margin-left: 98px;
-    display: block;
-    height: 48px;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: none;
-  }
+.default-form__label--text {
+  margin-left: 20px;
+}
 
-  &__label--checkbox {
-    margin-left: 98px;
-    display: block;
-    height: 46px;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: none;
-  }
+.default-form__label--radio {
+  margin-left: 98px;
+  display: block;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+}
 
-  &__input {
-    font: inherit;
-    background-color: $input-background;
-    color: $basic-black;
-    font-weight: 700;
-    font-size: 18px;
-    border: 0;
-    height: 58px;
-    margin-bottom: 20px;
-    padding-left: 21px;
-    margin-left: 10px;
-  }
+.default-form__label--checkbox {
+  margin-left: 98px;
+  display: block;
+  height: 46px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+}
 
-  &__radio {
-    margin-left: 50px;
-    height: 48px;
-  }
+.default-form__input {
+  background-color: $input-background;
+  color: $basic-black;
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  height: 58px;
+  margin-bottom: 20px;
+  padding-left: 21px;
+  margin-left: 10px;
+}
 
-  &__textarea {
-    width: 235px;
-    height: 160px;
-    font-weight: 700;
-    background-color: $input-background;
-    border: 0;
-    padding-left: 21px;
-    padding-right: 23px;
-    margin-bottom: 51px;
-  }
+.default-form__radio {
+  margin-left: 50px;
+  height: 48px;
+}
 
-  &__message {
-    padding-bottom: 29px;
-    padding-top: 35px;
-  }
+.default-form__textarea {
+  width: 235px;
+  height: 160px;
+  font-weight: 700;
+  background-color: $input-background;
+  border: 0;
+  padding-left: 21px;
+  padding-right: 23px;
+  margin-bottom: 51px;
+}
+
+.default-form__message {
+  padding-bottom: 29px;
+  padding-top: 35px;
 }

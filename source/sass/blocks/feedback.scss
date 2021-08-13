@@ -1,13 +1,15 @@
 .feedback {
-  &__form {
-    background-color: $basic-white;
-  }
+  width: 320px;
+}
 
-  &__fieldset {
-    border: 0;
-  }
+.feedback__form {
+  background-color: $basic-white;
+}
 
-  &__fieldset--emotions {
-    //later
-  }
+.feedback__fieldset {
+  border: 0;
+}
+
+.feedback__fieldset--emotions {
+  //later
 }

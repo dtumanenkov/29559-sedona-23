@@ -1,8 +1,7 @@
 .button {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $base-font;
   font-size: 21px;
   font-weight: 700;
-  text-transform: uppercase;
   line-height: 26px;
   color: $basic-white;
   background-color: $basic-blue;
