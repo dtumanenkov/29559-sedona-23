@@ -1,57 +1,55 @@
 .page-header {
   min-height: 84px;
   width: 320px;
+}
 
-  &__logo {
-    display: block;
-    width: 102px;
-    height: 84px;
-    margin: 0 auto;
-  }
+.page-header__logo {
+  display: block;
+  width: 102px;
+  height: 84px;
+  margin: 0 auto;
+}
 
-  &__logo-image {
-    margin: 0 auto;
-  }
+.page-header__logo-image {
+  margin: 0 auto;
+}
 
-  &__nav {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 40px;
-  }
+.page-header__nav {
+  font-family: $base-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
 
-  &__greeting {
-    width: 320px;
-    height: 389px;
-    background: $basic-white url("../../img/back-mobile.jpg") no-repeat center top;
-  }
+.page-header__greeting {
+  width: 320px;
+  height: 389px;
+  background: $basic-white url("../../img/back-mobile.jpg") no-repeat center top;
+}
 
-  &__image {
-    padding-left: 19px;
-  }
+.page-header__image {
+  margin: 0 auto;
+  display: block;
+}
 
-  &__heading {
-    background-color: $basic-white;
-    text-align: center;
+.page-header__heading {
+  background-color: $basic-white;
+  text-align: center;
+}
 
-    strong {
-      display: block;
-      text-transform: uppercase;
-      color: $basic-black;
-      font-family: "PT Sans", "Arial", sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 26px;
-      margin-top: 36px;
-      margin-bottom: 37px;
-    }
+.page-header__welcome {
+  display: block;
+  color: $basic-black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 36px;
+  margin-bottom: 37px;
+}
 
-    p {
-      color: $dark-gray;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 26px;
-      margin-bottom: 37px;
-    }
-  }
+.page-header__main-theme {
+  color: $dark-gray;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 37px;
 }

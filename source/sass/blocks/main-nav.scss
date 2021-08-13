@@ -1,30 +1,23 @@
 .main-nav {
   height: 223px;
+}
 
-  &__toggle {
-    width: 23px;
-    height: 22px;
-    float: right;
-    background-color: $basic-white;
-    background-image: url("../../img/burger.svg");
-    background-repeat: no-repeat;
-    border: 0;
-  }
+.main-nav__toggle {
+  width: 22px;
+  height: 22px;
+  float: right;
+  background-color: $basic-white;
+  background-image: url("../../img/burger.svg");
+  background-repeat: no-repeat;
+  border: 0;
+}
 
-  &__toggle--close {
-    width: 23px;
-    height: 23px;
-    float: right;
-    background-color: $basic-blue;
-    background-image: url("../../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    border: 0;
-  }
+.main-nav__toggle--close {
+  background-color: $basic-blue;
+  background-image: url("../../img/icon-cross.svg");
+}
 
-  &__list {
-    list-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.main-nav__list {
+  @include ul-ol-reset;
+  text-align: center;
 }
