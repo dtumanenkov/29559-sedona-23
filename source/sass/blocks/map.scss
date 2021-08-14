@@ -1,0 +1,17 @@
+.map {
+  width: 320px;
+  height: 350px;
+  background-color: $basic-white;
+}
+
+.map__image {
+  background-color: $background-gray;
+}
+
+.map__marker {
+  width: 17px;
+  height: 17px;
+  background-color: $marker-blue;
+  border: 5px solid $basic-white;
+  border-radius: 50%;
+}

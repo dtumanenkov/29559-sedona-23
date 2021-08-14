@@ -1,0 +1,13 @@
+.social-links {
+  @include ul-ol-reset;
+  text-align: center;
+}
+
+.social-links__item {
+  width: 46px;
+  height: 48px;
+  background-color: $basic-blue;
+  display: inline-block;
+  margin-top: 34px;
+  margin-bottom: 40px;
+}

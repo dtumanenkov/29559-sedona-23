@@ -1,1 +1,30 @@
-// Начните писать стили здесь
+// Global
+@import "global/fonts.scss";
+@import "global/normalize";
+@import "global/global";
+@import "global/variables";
+
+// Blocks index.html
+@import "blocks/mixins";
+@import "blocks/page";
+@import "blocks/helper-class";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/page-main";
+@import "blocks/advantages";
+@import "blocks/features";
+@import "blocks/search";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/social-links";
+@import "blocks/copyright";
+@import "blocks/button";
+
+// Blocks form.html
+@import "blocks/feedback";
+@import "blocks/default-form";
+
+// Blocks catalog.html
+@import "blocks/gallery";
+@import "blocks/video";

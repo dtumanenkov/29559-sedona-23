@@ -1,0 +1,11 @@
+.page {
+  @include global-font-style;
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  background-color: $basic-white;
+  color: $basic-black;
+  margin: 0 auto;
+}

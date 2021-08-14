@@ -1,0 +1,16 @@
+.site-list {
+  @include ul-ol-reset;
+  width: 320px;
+}
+
+.site-list__item {
+  height: 55px;
+  background-color: $basic-blue;
+}
+
+.site-list__link {
+  color: $basic-white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}

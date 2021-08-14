@@ -1,0 +1,21 @@
+// Default styles reset
+
+@mixin ul-ol-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin p-reset {
+  margin: 0;
+  padding: 0;
+}
+
+// Fonts
+
+@mixin global-font-style {
+  font-family: $base-font;
+  font-size: $base-page-font-size;
+  line-height: $base-Line_height;
+  text-transform: uppercase;
+}

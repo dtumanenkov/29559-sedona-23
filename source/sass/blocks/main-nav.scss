@@ -1,0 +1,22 @@
+.main-nav {
+  height: 223px;
+}
+
+.main-nav__toggle {
+  width: 22px;
+  height: 22px;
+  float: right;
+  background-color: $basic-white;
+  background-image: url("../../img/burger.svg");
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.main-nav__toggle--close {
+  background-color: $basic-blue;
+  background-image: url("../../img/icon-cross.svg");
+}
+
+.main-nav__list {
+  text-align: center;
+}
