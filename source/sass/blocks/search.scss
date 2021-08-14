@@ -4,7 +4,6 @@
 }
 
 .search__caption {
-  font-family: $base-font;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -12,12 +11,7 @@
 }
 
 .search__overview {
-  font-family: $base-font;
   color: $dark-gray;
   margin-bottom: 27px;
   margin-top: 20px;
-}
-
-.search__btn {
-  //later
 }
