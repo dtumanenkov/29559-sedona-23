@@ -1,4 +1,5 @@
 .site-list {
+  @include ul-ol-reset;
   width: 320px;
 }
 

@@ -1,7 +1,6 @@
 .social-links {
-  text-align: center;
-
   @include ul-ol-reset;
+  text-align: center;
 }
 
 .social-links__item {

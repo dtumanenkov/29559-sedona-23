@@ -1,29 +1,35 @@
 .gallery {
-  &__title {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 24px;
-    color: $basic-black;
-  }
-
-  &__author {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: $dark-gray;
-    text-align: left;
-  }
-
-  &__like {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    background-color: $basic-white;
-    color: $basic-black;
-    border: 0;
-  }
+  width: 320px;
 }
+
+.gallery__list {
+  @include ul-ol-reset;
+}
+
+.gallery__title {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.gallery__author {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $dark-gray;
+  text-align: left;
+}
+
+.gallery__like {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: $basic-white;
+  color: $basic-black;
+  border: 0;
+}
+

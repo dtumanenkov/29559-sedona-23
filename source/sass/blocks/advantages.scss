@@ -3,12 +3,13 @@
 }
 
 .advantages__list {
+  @include ul-ol-reset;
   background-color: $basic-white;
 }
 
 .advantages__item {
-  background-color: $background-gray;
   min-height: 167px;
+  color: $basic-white;
 }
 
 .advantages__item--big {
@@ -20,7 +21,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  color: $basic-black;
+  color: $basic-white;
 }
 
 .advantages__text {
@@ -28,7 +29,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: $dark-gray;
 }
 
 .advantages__picture {
