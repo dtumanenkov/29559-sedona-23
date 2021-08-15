@@ -1,11 +1,14 @@
 .main-nav {
-  height: 223px;
+  outline: 3px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -3px;
 }
 
 .main-nav__toggle {
   width: 22px;
   height: 22px;
-  float: right;
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, 50%);
   background-color: $basic-white;
   background-image: url("../img/burger.svg");
   background-repeat: no-repeat;

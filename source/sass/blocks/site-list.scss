@@ -1,6 +1,8 @@
 .site-list {
   @include ul-ol-reset;
   width: 320px;
+  position: absolute;
+  top: 0;
 }
 
 .site-list__item {

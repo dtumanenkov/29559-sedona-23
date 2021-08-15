@@ -7,4 +7,6 @@
   background-color: $basic-white;
   color: $basic-black;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }

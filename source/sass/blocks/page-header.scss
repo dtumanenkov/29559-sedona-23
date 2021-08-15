@@ -1,21 +1,43 @@
 .page-header {
   min-height: 84px;
   width: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 84px;
+  }
 }
 
 .page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 102px;
   height: 84px;
   margin: 0 auto;
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 156px;
+    height: 84px;
+  }
 }
 
 .page-header__logo-image {
   margin: 0 auto;
+  width: 102px;
+  height: 84px;
+  background-image: url("../img/logotype.svg");
 }
 
 .page-header__nav {
   font-weight: 700;
+  height: 56px;
   font-size: 18px;
   line-height: 40px;
 }
