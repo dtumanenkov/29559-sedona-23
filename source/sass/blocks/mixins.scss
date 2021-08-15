@@ -15,7 +15,7 @@
 
 @mixin global-font-style {
   font-family: $base-font;
-  font-size: $base-page-font-size;
-  line-height: $base-Line_height;
+  font-size: $font-size;
+  line-height: $line-height;
   text-transform: uppercase;
 }

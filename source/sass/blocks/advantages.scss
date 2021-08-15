@@ -9,24 +9,29 @@
 
 .advantages__item {
   min-height: 167px;
-  color: $basic-white;
+  color: $basic-black;
 }
 
 .advantages__item--big {
   background-color: $basic-blue;
+  color: $basic-white;
 }
 
 .advantages__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  color: $basic-white;
 }
 
 .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  color: $dark-gray;
+}
+
+.advantages__text--big {
+  color: $basic-white;
 }
 
 .advantages__picture {
