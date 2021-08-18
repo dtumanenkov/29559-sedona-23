@@ -1,5 +1,9 @@
 .page-main {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .page-main__advantages {

@@ -1,5 +1,9 @@
 .advantages {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .advantages__list {

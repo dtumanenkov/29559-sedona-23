@@ -13,11 +13,19 @@
   background-image: url("../img/burger.svg");
   background-repeat: no-repeat;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle--close {
   background-color: $basic-blue;
   background-image: url("../img/icon-cross.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
