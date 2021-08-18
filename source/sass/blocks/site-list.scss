@@ -3,11 +3,34 @@
   width: 320px;
   position: absolute;
   top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .site-list__item {
   height: 55px;
   background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    height: 56px;
+    background-color: $basic-white;
+  }
+}
+
+.site-list__item--logoplace{
+  height: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+  }
 }
 
 .site-list__link {
@@ -15,4 +38,11 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+  }
 }

@@ -8,6 +8,9 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 84px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 
