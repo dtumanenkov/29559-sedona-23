@@ -1,12 +1,24 @@
 .features {
   @include ul-ol-reset;
   width: 320px;
+
+  @media  (min-width: $tablet-width) {
+    width: 768px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .features__item {
   background-color: $basic-white;
   text-align: left;
   padding-left: 69px;
+}
+
+.features__item--reverse {
+  order: 1;
 }
 
 .features__title {

@@ -3,6 +3,7 @@
 }
 
 .page__body {
+  width:320px;
   min-height: 100%;
   background-color: $basic-white;
   color: $basic-black;
@@ -10,4 +11,8 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+
+  @media  (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
