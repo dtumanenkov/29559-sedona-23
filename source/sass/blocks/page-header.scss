@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page-header__logo {
@@ -45,6 +49,11 @@
     width: 768px;
     min-height: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    background-color: $basic-white;
+  }
 }
 
 .page-header__greeting {
@@ -55,6 +64,11 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     min-height: 518px;
+    background: $basic-white url("../img/back-tablet.jpg") no-repeat center top;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
     background: $basic-white url("../img/back-desktop.jpg") no-repeat center top;
   }
 }

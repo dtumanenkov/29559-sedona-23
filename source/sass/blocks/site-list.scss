@@ -13,6 +13,10 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 1200px;
+  }
 }
 
 .site-list__item {
@@ -25,7 +29,7 @@
   }
 }
 
-.site-list__item--logoplace{
+.site-list__item--logoplace {
   height: 0;
 
   @media (min-width: $tablet-width) {
