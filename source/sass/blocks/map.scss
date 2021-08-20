@@ -1,7 +1,19 @@
 .map {
   width: 320px;
   height: 350px;
-  background-color: $basic-white;
+  background: $basic-white url("../img/map-mobile.jpg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 350px;
+    background: $basic-white url("../img/map-tablet.jpg") no-repeat center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 350px;
+    background: $basic-white url("../img/map-desktop.jpg") no-repeat center;
+  }
 }
 
 .map__image {

@@ -8,6 +8,11 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  @media  (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 
@@ -15,6 +20,14 @@
   background-color: $basic-white;
   text-align: left;
   padding-left: 69px;
+
+  @media  (min-width: $desktop-width) {
+    width: 256px;
+  }
+
+  @media  (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .features__item--reverse {
