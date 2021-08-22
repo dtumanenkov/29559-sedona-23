@@ -22,6 +22,25 @@
 
 .default-form__list {
   @include ul-ol-reset;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+.default-form__list--contacts {
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-content: space-around;
+  }
+}
+
+.default-form__list--landmark {
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-content: space-around;
+  }
 }
 
 .default-form__label {
