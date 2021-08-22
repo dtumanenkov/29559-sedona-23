@@ -16,12 +16,12 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    padding: 0 54px;
+    width: $desktop-width;
+    padding: 0 40px;
     background-color: $desktop-background-gray;
   }
 }

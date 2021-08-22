@@ -5,7 +5,7 @@
   top: 0;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     height: 56px;
     display: flex;
     flex-direction: row;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: $desktop-width;
   }
 }
 
@@ -24,16 +24,17 @@
   background-color: $basic-blue;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width/5;
     height: 56px;
     background-color: $basic-white;
   }
-}
 
-.site-list__item--logoplace {
-  height: 0;
+  @media (min-width: $desktop-width) {
+    width: $desktop-width/5;
+  }
 
-  @media (min-width: $tablet-width) {
-    width: 102px;
+  &:nth-child(2) {
+    margin-right: auto;
   }
 }
 

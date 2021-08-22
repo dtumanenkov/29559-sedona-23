@@ -63,12 +63,12 @@
 
   @media (min-width: $tablet-width) {
     grid-area: advantages__header;
-    width: 256px;
+    width: $tablet-width/3;
     min-height: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: $desktop-width/3;
   }
 }
 
