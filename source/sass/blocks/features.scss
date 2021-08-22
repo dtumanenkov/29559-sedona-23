@@ -1,18 +1,12 @@
 .features {
   @include ul-ol-reset;
-  width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 330px;
+    min-height: 330px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
   }
 }
 
@@ -22,11 +16,11 @@
   padding-left: 69px;
 
   @media (min-width: $desktop-width) {
-    width: 256px;
+    width: $desktop-width/3;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: $desktop-width/3;
   }
 }
 

@@ -1,13 +1,7 @@
 .search {
-  width: 320px;
   min-height: 287px;
 
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1200px;
     background-color: $basic-white;
   }
 }
