@@ -1,12 +1,12 @@
 .advantages__list {
   @include ul-ol-reset;
   background-color: $background-gray;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -32,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, $tablet-width/3);
     grid-template-rows: 256px 330px;
     grid-gap: 0;
     grid-template-areas:
@@ -42,14 +42,19 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, $desktop-width/3);
   }
 }
 
 .advantages__item--big--reverse {
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
@@ -91,12 +96,12 @@
 
   @media (min-width: $tablet-width) {
     grid-area: advantages__picture;
-    width: 512px;
+    width: $tablet-width/3*2;
     height: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
+    width: $desktop-width/3*2;
   }
 }
 
