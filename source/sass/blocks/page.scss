@@ -1,5 +1,9 @@
 .page {
   min-height: 100%;
+
+  @media (min-width: $desktop-width) {
+    background-color: $desktop-background-gray;
+  }
 }
 
 .page__body {

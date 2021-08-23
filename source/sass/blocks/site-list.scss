@@ -9,8 +9,7 @@
     height: 56px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -24,17 +23,17 @@
   background-color: $basic-blue;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width/5;
+    width: 20%;
     height: 56px;
     background-color: $basic-white;
   }
 
-  @media (min-width: $desktop-width) {
-    width: $desktop-width/5;
-  }
+  &:nth-child(4n+2) {
+    margin-right: $tablet-width/5;
 
-  &:nth-child(2) {
-    margin-right: auto;
+    @media (min-width: $desktop-width) {
+      margin-right: $desktop-width/5;
+    }
   }
 }
 

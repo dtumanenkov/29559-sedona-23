@@ -15,8 +15,8 @@
   text-align: left;
   padding-left: 69px;
 
-  @media (min-width: $desktop-width) {
-    width: $desktop-width/3;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width/3;
   }
 
   @media (min-width: $desktop-width) {
