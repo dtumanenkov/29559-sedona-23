@@ -1,30 +1,28 @@
-.advantages {
-  width: 320px;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
-}
-
 .advantages__list {
   @include ul-ol-reset;
-  background-color: $basic-white;
+  background-color: $background-gray;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
 .advantages__item {
   min-height: 167px;
   color: $basic-black;
+  background-color: $background-gray;
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+    width: $tablet-width/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width/3;
+  }
 }
 
 .advantages__item--big {
@@ -33,7 +31,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 256px);
+    grid-template-columns: repeat(3, $tablet-width/3);
     grid-template-rows: 256px 330px;
     grid-gap: 0;
     grid-template-areas:
@@ -42,28 +40,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, $desktop-width/3);
   }
 }
 
 .advantages__item--big--reverse {
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     display: flex;
     flex-direction: row-reverse;
   }
-}
-
-.advantages__item--small {
-  @media (min-width: $tablet-width) {
-    width: 256px;
-    height: 256px;
-    background-color: $background-gray;
-  }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: $desktop-width;
   }
 }
 
@@ -72,12 +62,12 @@
 
   @media (min-width: $tablet-width) {
     grid-area: advantages__header;
-    width: 286px;
-    height: 256px;
+    width: $tablet-width/3;
+    min-height: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: $desktop-width/3;
   }
 }
 
@@ -105,12 +95,12 @@
 
   @media (min-width: $tablet-width) {
     grid-area: advantages__picture;
-    width: 512px;
+    width: $tablet-width/3*2;
     height: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
+    width: $desktop-width/3*2;
   }
 }
 

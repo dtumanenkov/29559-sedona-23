@@ -1,17 +1,8 @@
 .page-header {
-  width: 320px;
   position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
 }
 
 .page-header__logo {
@@ -22,8 +13,6 @@
   width: 102px;
   height: 84px;
   margin: 0 auto;
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     width: 156px;
