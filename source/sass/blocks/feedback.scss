@@ -18,7 +18,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     grid-gap: 0;
     grid-template-areas:
       "feedback__fieldset--impression feedback__fieldset--person"

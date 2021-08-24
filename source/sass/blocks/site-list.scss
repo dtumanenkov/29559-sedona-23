@@ -29,7 +29,9 @@
   }
 
   &:nth-child(4n+2) {
-    margin-right: $tablet-width/5;
+    @media (min-width: $tablet-width) {
+      margin-right: $tablet-width/5;
+    }
 
     @media (min-width: $desktop-width) {
       margin-right: $desktop-width/5;
