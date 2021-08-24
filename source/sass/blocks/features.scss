@@ -1,12 +1,31 @@
 .features {
   @include ul-ol-reset;
-  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
   background-color: $basic-white;
   text-align: left;
   padding-left: 69px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width/3;
+  }
+}
+
+.features__item--reverse {
+  order: 1;
 }
 
 .features__title {
@@ -20,6 +39,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: $basic-black;
+  color: $dark-gray;
   text-align: left;
 }

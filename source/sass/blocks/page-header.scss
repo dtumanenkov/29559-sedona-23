@@ -1,34 +1,71 @@
 .page-header {
-  min-height: 84px;
-  width: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 102px;
   height: 84px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 156px;
+    height: 84px;
+  }
 }
 
 .page-header__logo-image {
   margin: 0 auto;
+  width: 102px;
+  height: 84px;
+  background-image: url("../img/logotype.svg");
 }
 
 .page-header__nav {
+  width: 320px;
   font-weight: 700;
+  height: 56px;
   font-size: 18px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    background-color: $basic-white;
+  }
 }
 
 .page-header__greeting {
   width: 320px;
   height: 389px;
   background: $basic-white url("../img/back-mobile.jpg") no-repeat center top;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 518px;
+    background: $basic-white url("../img/back-tablet.jpg") no-repeat center top;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    background: $basic-white url("../img/back-desktop.jpg") no-repeat center top;
+  }
 }
 
 .page-header__image {
   margin: 0 auto;
   display: block;
+  margin-top: 77px;
 }
 
 .page-header__heading {

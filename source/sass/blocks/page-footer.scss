@@ -1,9 +1,18 @@
 .page-footer {
-  width: 320px;
+  min-height: 120px;
 }
 
 .page-footer__wrapper {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    background-color: $basic-white;
+  }
 }
 
 .page-footer__hashtag {
@@ -15,8 +24,13 @@
   margin-top: 77px;
   margin-bottom: 34px;
   text-align: center;
-}
 
-.page-footer__hashtag-text {
-  margin: 29px 78px 29px 78px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }

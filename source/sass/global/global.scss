@@ -8,3 +8,21 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+html {
+  font-family: $base-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}

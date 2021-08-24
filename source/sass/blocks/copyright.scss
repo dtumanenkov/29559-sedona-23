@@ -1,5 +1,15 @@
 .copyright {
   width: 320px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .copyright__link {

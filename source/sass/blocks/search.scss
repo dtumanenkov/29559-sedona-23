@@ -1,6 +1,9 @@
 .search {
-  width: 320px;
   min-height: 287px;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
 }
 
 .search__caption {

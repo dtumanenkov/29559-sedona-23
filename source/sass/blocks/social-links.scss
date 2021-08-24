@@ -1,6 +1,15 @@
 .social-links {
   @include ul-ol-reset;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .social-links__item {

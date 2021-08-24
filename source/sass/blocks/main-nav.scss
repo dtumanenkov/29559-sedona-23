@@ -1,20 +1,26 @@
-.main-nav {
-  height: 223px;
-}
-
 .main-nav__toggle {
   width: 22px;
   height: 22px;
-  float: right;
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, 50%);
   background-color: $basic-white;
-  background-image: url("../../img/burger.svg");
+  background-image: url("../img/burger.svg");
   background-repeat: no-repeat;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle--close {
   background-color: $basic-blue;
-  background-image: url("../../img/icon-cross.svg");
+  background-image: url("../img/icon-cross.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
