@@ -53,9 +53,32 @@
   grid-area: feedback__fieldset--emotions;
 }
 
+.default-form__required {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    text-align: right;
+  }
+}
+
 .feedback__popup {
   display: flex;
   height: 100%;
   flex-direction: column;
   align-content: space-around;
+}
+
+.feedback__popup--failure {
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    height: 347px;
+  }
+}
+
+.feedback__popup--sucсses {
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 347px;
+  }
 }
