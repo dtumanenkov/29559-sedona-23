@@ -4,6 +4,7 @@
 
 .gallery__list {
   @include ul-ol-reset;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -12,13 +13,19 @@
 }
 
 .gallery__item {
-  outline: solid 3px red;
+  outline: solid 3px rgb(194, 61, 61);
+  outline-offset: -3px;
+  background-color: $input-background;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width/2;
+  }
 }
 
 .gallery__item--big {
-  @media (min-width: $tablet-width){
-    width: 648px;
-    height: 400px
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +40,7 @@
 .gallery__image {
   width: 280px;
   height: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -44,19 +52,38 @@
   }
 }
 
+.gallery__text {
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    background-color: $input-background;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "title like"
+      "author like";
+  }
+}
+
 .gallery__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   color: $basic-black;
+  width: 50%;
+  grid-area: title;
 }
 
 .gallery__author {
+  width: 50%;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: $dark-gray;
   text-align: left;
+  text-transform: none;
+  grid-area: author;
 }
 
 .gallery__like {
@@ -66,4 +93,10 @@
   background-color: $basic-white;
   color: $basic-black;
   border: 0;
+  grid-area: like;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    background-color: inherit;
+  }
 }
