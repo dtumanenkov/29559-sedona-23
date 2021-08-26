@@ -32,7 +32,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, $tablet-width/3);
-    grid-template-rows: 256px 330px;
     grid-gap: 0;
     grid-template-areas:
       "advantages__header advantages__picture advantages__picture"

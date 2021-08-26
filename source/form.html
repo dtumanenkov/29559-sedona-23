@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - обратная связь</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -41,80 +42,83 @@
       <section class="page-main__feedback feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback__form default-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--person">
-            <legend class="default-form__title">Представьтесь:</legend>
-            <ul class="default-form__list">
-              <li>
-                <label class="default-form__label default-form__label--text">Имя*:<input class="default-form__input" type="text" placeholder="Петр" name="name"></label>
-              </li>
-              <li>
-                <label class="default-form__label default-form__label--text">Фамилия*:<input class="default-form__input" type="text" placeholder="Иванов" name="surname"></label>
-              </li>
-              <li>
-                <label class="default-form__label default-form__label--text">Отчество:<input class="default-form__input" type="text" placeholder="Александрович" name="middle-name"></label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--contacts">
-            <legend class="default-form__title">Контактная информация:</legend>
-            <ul class="default-form__list">
-              <li>
-                <label class="default-form__label--text">Контактный телефон*:<input class="default-form__input" type="tel" placeholder="Введите телефон" name="phone"></label>
-              </li>
-              <li>
-                <label class="default-form__label--text">Электронная почта*:<input class="default-form__input" type="email" placeholder="Введите e-mail" name="email"></label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--impression">
-            <legend class="default-form__title">Ваше общее впечатление:</legend>
-            <ul class="default-form__list">
-              <li>
-                <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-positive" checked value="positive">
-                <label class="default-form__label--radio" for="filter-positive">Скорее положительное</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-negative" value="negative">
-                <label class="default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
-                <label class="default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--landmark">
-            <legend class="default-form__title">Посещенные достопримечательности:</legend>
-            <ul class="default-form__list">
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
-                <label class="default-form__label--checkbox" for="filter-slider">Мост Дьявола</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
-                <label class="default-form__label--checkbox" for="filter-advantages">Гора-Колокол</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
-                <label class="default-form__label--checkbox" for="filter-news">Слайд-парк</label>
-              </li>
-              <li>
-                <input class="visually-hidden default-form__checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
-                <label class="default-form__label--checkbox" for="filter-gallery">Красные скалы</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--emotions">
-            <legend class="default-form__title">Опишите свои эмоции:</legend>
-            <textarea class="default-form__textarea" required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea>
-          </fieldset>
-          <button class="default-form__button feedback__button button" type="submit">Отправить отзыв</button>
+          <div class="feedback__form--wrapper">
+            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--person">
+              <legend class="default-form__title">Представьтесь:</legend>
+              <ul class="default-form__list">
+                <li>
+                  <label class="default-form__label default-form__label--text">Имя*:</label><input class="default-form__input" type="text" placeholder="Петр" name="name">
+                </li>
+                <li>
+                  <label class="default-form__label default-form__label--text">Фамилия*:</label><input class="default-form__input" type="text" placeholder="Иванов" name="surname">
+                </li>
+                <li>
+                  <label class="default-form__label default-form__label--text">Отчество:</label><input class="default-form__input" type="text" placeholder="Александрович" name="middle-name">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--contacts">
+              <legend class="default-form__title">Контактная информация:</legend>
+              <ul class="default-form__list default-form__list--contacts">
+                <li>
+                  <label class="default-form__label--text">Контактный телефон*:</label><input class="default-form__input" type="tel" placeholder="Введите телефон" name="phone">
+                </li>
+                <li>
+                  <label class="default-form__label--text">Электронная почта*:</label><input class="default-form__input" type="email" placeholder="Введите e-mail" name="email">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--impression">
+              <legend class="default-form__title">Ваше общее впечатление:</legend>
+              <ul class="default-form__list">
+                <li>
+                  <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-positive" checked value="positive">
+                  <label class="default-form__label--radio" for="filter-positive">Скорее положительное</label>
+                </li>
+                <li>
+                  <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-negative" value="negative">
+                  <label class="default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
+                </li>
+                <li>
+                  <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
+                  <label class="default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--landmark">
+              <legend class="default-form__title">Посещенные достопримечательности:</legend>
+              <ul class="default-form__list default-form__list--landmark">
+                <li class="default-form__item--landmark">
+                  <input class="visually-hidden default-form__checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
+                  <label class="default-form__label--checkbox" for="filter-slider">Мост Дьявола</label>
+                </li>
+                <li class="default-form__item--landmark">
+                  <input class="visually-hidden default-form__checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
+                  <label class="default-form__label--checkbox" for="filter-advantages">Гора-Колокол</label>
+                </li>
+                <li class="default-form__item--landmark">
+                  <input class="visually-hidden default-form__checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
+                  <label class="default-form__label--checkbox" for="filter-news">Слайд-парк</label>
+                </li>
+                <li class="default-form__item--landmark">
+                  <input class="visually-hidden default-form__checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
+                  <label class="default-form__label--checkbox" for="filter-gallery">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--emotions">
+              <legend class="default-form__title">Опишите свои эмоции:</legend>
+              <textarea class="default-form__textarea" required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea>
+            </fieldset>
+            <button class="default-form__button feedback__button button" type="submit">Отправить отзыв</button>
+            <span class="default-form__required">*- обязательные поля</span>
+          </div>
           <div class="feedback__popup feedback__popup--failure">
             <strong class="default-form__title default-form__title--failure">Что-то пошло не так!</strong>
             <p class="default-form__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <button class="default-form__button feedback__button button" type="submit">ок</button>
           </div>
-          <div class="feedback__popup feedback__popup--failure">
+          <div class="feedback__popup feedback__popup--sucсses">
             <strong class="default-form__title default-form__title--failure">Ваш отзыв отправлен!</strong>
             <p class="default-form__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
             <button class="default-form__button feedback__button button" type="submit">Закрыть окно</button>

@@ -1,11 +1,84 @@
 .feedback {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .feedback__form {
   background-color: $basic-white;
 }
 
+.feedback__form--wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    grid-template-areas:
+      "feedback__fieldset--impression feedback__fieldset--person"
+      "feedback__fieldset--contacts feedback__fieldset--contacts"
+      "feedback__fieldset--landmark feedback__fieldset--landmark"
+      "feedback__fieldset--emotions feedback__fieldset--emotions";
+  }
+}
+
 .feedback__fieldset {
   border: 0;
+  outline: 3px solid rgba(255, 100, 0, 0.8);
+  outline-offset: -3px;
+}
+
+.feedback__fieldset--person {
+  grid-area: feedback__fieldset--person;
+}
+
+.feedback__fieldset--contacts {
+  grid-area: feedback__fieldset--contacts;
+}
+
+.feedback__fieldset--impression {
+  grid-area: feedback__fieldset--impression;
+}
+
+.feedback__fieldset--landmark {
+  grid-area: feedback__fieldset--landmark;
+}
+
+.feedback__fieldset--emotions {
+  grid-area: feedback__fieldset--emotions;
+}
+
+.default-form__required {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    text-align: right;
+  }
+}
+
+.feedback__popup {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.feedback__popup--failure {
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    height: 347px;
+  }
+}
+
+.feedback__popup--sucсses {
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 347px;
+  }
 }

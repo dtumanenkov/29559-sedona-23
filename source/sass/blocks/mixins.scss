@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+@mixin figure-reset {
+  margin: 0;
+}
+
 // Fonts
 
 @mixin global-font-style {

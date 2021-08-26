@@ -22,6 +22,42 @@
 
 .default-form__list {
   @include ul-ol-reset;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+.default-form__list--contacts {
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-content: space-around;
+  }
+}
+
+.default-form__list--landmark {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.default-form__item--landmark {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width/2.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width/4;
+    justify-content: space-between;
+  }
 }
 
 .default-form__label {
@@ -58,10 +94,9 @@
   font-weight: 700;
   font-size: 18px;
   border: 0;
+  width: 100%;
   height: 58px;
   margin-bottom: 20px;
-  padding-left: 21px;
-  margin-left: 10px;
 }
 
 .default-form__radio {
@@ -70,15 +105,13 @@
 }
 
 .default-form__textarea {
-  width: 235px;
+  width: 100%;
   height: 160px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   background-color: $input-background;
   border: 0;
-  padding-left: 22px;
-  padding-right: 22px;
   margin-bottom: 51px;
 }
 
