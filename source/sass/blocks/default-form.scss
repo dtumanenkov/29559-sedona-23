@@ -37,16 +37,27 @@
 }
 
 .default-form__list--landmark {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
   }
 }
 
-.default-form__list li {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+.default-form__item--landmark {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width/2.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width/4;
+    justify-content: space-between;
+  }
 }
 
 .default-form__label {

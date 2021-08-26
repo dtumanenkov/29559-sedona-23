@@ -20,16 +20,16 @@
   @media (min-width: $tablet-width) {
     width: $tablet-width/2;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width/3;
+  }
 }
 
 .gallery__item--big {
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
   }
 }
 
