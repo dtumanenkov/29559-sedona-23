@@ -1,6 +1,7 @@
 .copyright {
-  width: 320px;
-  text-align: center;
+  width: 121px;
+  margin-left: 95px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -9,6 +10,17 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    bottom: -4px;
+    right: -8px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
   }
 }
 

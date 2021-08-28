@@ -13,6 +13,7 @@
   width: 102px;
   height: 84px;
   margin: 0 auto;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 156px;
@@ -46,9 +47,32 @@
 }
 
 .page-header__greeting {
+  position: relative;
   width: 320px;
   height: 389px;
   background: $basic-white url("../img/back-mobile.jpg") no-repeat center top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid $basic-white;
+    border-right: 160px solid transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid $basic-white;
+    border-left: 160px solid transparent;
+  }
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -65,12 +89,36 @@
 .page-header__image {
   margin: 0 auto;
   display: block;
-  margin-top: 77px;
+  margin-top: 90px;
 }
 
 .page-header__heading {
   background-color: $basic-white;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid transparent;
+    border-right: 160px solid $basic-white;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid transparent;
+    border-left: 160px solid $basic-white;
+    z-index: 1;
+  }
 }
 
 .page-header__welcome {
@@ -79,8 +127,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-top: 36px;
-  margin-bottom: 37px;
+  margin-top: 32px;
+  margin-bottom: 30px;
 }
 
 .page-header__main-theme {

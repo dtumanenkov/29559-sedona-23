@@ -1,8 +1,8 @@
 .advantages__list {
   @include ul-ol-reset;
-  background-color: $background-gray;
   display: flex;
   flex-direction: column;
+  counter-reset: advantages;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -11,6 +11,7 @@
 }
 
 .advantages__item {
+  position: relative;
   min-height: 167px;
   color: $basic-black;
   background-color: $background-gray;
@@ -23,11 +24,35 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width/3;
   }
+
+  &::before {
+    position: absolute;
+    top: 83px;
+    left: 43%;
+    display: block;
+    counter-increment: advantages;
+    content: "—№" counter(advantages) "—";
+  }
+
+  &--big::before {
+    position: absolute;
+    top: 73px;
+    left: 43%;
+  }
+
+  &--small::before {
+    position: absolute;
+    top: 58px;
+    left: 43%;
+  }
 }
 
 .advantages__item--big {
   background-color: $basic-blue;
   color: $basic-white;
+  display: flex;
+  flex-direction: column;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -45,6 +70,9 @@
 }
 
 .advantages__item--big--reverse {
+  color: $basic-white;
+  margin-top: 10px;
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: flex;
@@ -57,7 +85,7 @@
 }
 
 .advantages__header {
-  min-height: 211px;
+  min-height: 155px;
 
   @media (min-width: $tablet-width) {
     grid-area: advantages__header;
@@ -74,6 +102,15 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  margin-top: 50px;
+
+  &--reverse {
+    margin-top: 38px;
+  }
+
+  &--small {
+    margin-top: 25px;
+  }
 }
 
 .advantages__text {
@@ -81,10 +118,12 @@
   font-weight: 400;
   line-height: 21px;
   color: $dark-gray;
+  margin-top: 50px;
 }
 
 .advantages__text--big {
   color: $basic-white;
+  margin-bottom: 36px;
 }
 
 .advantages__picture {

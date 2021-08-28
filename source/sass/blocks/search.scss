@@ -1,5 +1,7 @@
 .search {
   min-height: 287px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
@@ -11,10 +13,18 @@
   font-weight: 700;
   line-height: 26px;
   color: $basic-black;
+  margin-top: 31px;
 }
 
 .search__overview {
   color: $dark-gray;
   margin-bottom: 27px;
-  margin-top: 20px;
+  margin-top: 22px;
+}
+
+.search__btn {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
 }
