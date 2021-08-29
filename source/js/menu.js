@@ -4,13 +4,13 @@ const menu_close=document.querySelector(".main-nav__toggle--close");
 
 menu_link.addEventListener("click",function(evt){
   evt.preventDefault();
-  menu_popup.classList.remove("visually-hidden");
+  menu_popup.classList.remove("site-list--mobile");
   menu_close.classList.remove("visually-hidden");
 });
 
 menu_close.addEventListener("click",function(evt){
   evt.preventDefault();
-  menu_popup.classList.add("visually-hidden");
+  menu_popup.classList.add("site-list--mobile");
   menu_close.classList.add("visually-hidden");
 });
 
