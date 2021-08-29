@@ -17,6 +17,7 @@
 .main-nav__toggle--close {
   background-color: $basic-blue;
   background-image: url("../img/icon-cross.svg");
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     display: none;
