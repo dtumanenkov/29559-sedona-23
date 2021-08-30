@@ -20,6 +20,8 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width/3;
+    padding-left: 0;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +44,11 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-top: 100px;
+  }
+
   &--accomodation::before {
     content: "";
     position: absolute;
@@ -50,7 +57,12 @@
     left: -50px;
     top: -10px;
     background-image: url("../img/icon-house.svg");
-    background-repeat: no-repeat;
+    background-repeat: round;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 72px;
+    }
   }
 
   &--souvenirs::before {
@@ -61,7 +73,12 @@
     left: -45px;
     top: -10px;
     background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
+    background-repeat: round;
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      height: 75px;
+    }
   }
 
   &--food::before {
@@ -72,12 +89,21 @@
     left: -50px;
     top: -8px;
     background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
+    background-repeat: round;
+
+    @media (min-width: $tablet-width) {
+      width: 76px;
+      height: 68px;
+    }
   }
 }
 
 .features__title--first {
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 155px;
+  }
 }
 
 .features__text {
@@ -87,4 +113,15 @@
   color: $dark-gray;
   text-align: left;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    & br {
+      display: none;
+    }
+  }
 }

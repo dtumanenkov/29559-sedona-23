@@ -164,6 +164,14 @@
     width: 520px;
     height: 110px;
     margin: 44px auto 53px auto;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 }
 

@@ -38,6 +38,11 @@
     position: absolute;
     top: 73px;
     left: 43%;
+
+    @media (min-width: $tablet-width) {
+      top: 103px;
+      left: 41%;
+    }
   }
 
   &--small::before {
@@ -111,6 +116,14 @@
   &--small {
     margin-top: 25px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
 }
 
 .advantages__text {
@@ -119,11 +132,25 @@
   line-height: 21px;
   color: $dark-gray;
   margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+  }
 }
 
 .advantages__text--big {
   color: $basic-white;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .advantages__picture {
