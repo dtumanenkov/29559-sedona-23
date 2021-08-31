@@ -46,7 +46,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin-top: 100px;
+    margin-top: 155px;
   }
 
   &--accomodation::before {
@@ -62,6 +62,8 @@
     @media (min-width: $tablet-width) {
       width: 75px;
       height: 72px;
+      left: 90px;
+      top: -95px;
     }
   }
 
@@ -78,6 +80,8 @@
     @media (min-width: $tablet-width) {
       width: 64px;
       height: 75px;
+      left: 95px;
+      top: -100px;
     }
   }
 
@@ -94,6 +98,8 @@
     @media (min-width: $tablet-width) {
       width: 76px;
       height: 68px;
+      left: 90px;
+      top: -94px;
     }
   }
 }
@@ -119,9 +125,16 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-top: 25px;
 
     & br {
       display: none;
     }
+  }
+}
+
+.features__text--br {
+  @media (min-width: $tablet-width) {
+    width: 60%;
   }
 }

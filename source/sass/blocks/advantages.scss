@@ -49,6 +49,11 @@
     position: absolute;
     top: 58px;
     left: 43%;
+
+    @media (min-width: $tablet-width) {
+      top: 104px;
+      left: 41%;
+    }
   }
 }
 
@@ -82,6 +87,13 @@
     width: $tablet-width;
     display: flex;
     flex-direction: row-reverse;
+    margin-top:0;
+
+    &::before {
+      position: absolute;
+      top: 105px;
+      left: 80.5%;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -109,20 +121,39 @@
   line-height: 26px;
   margin-top: 50px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
   &--reverse {
-    margin-top: 38px;
+    margin-top: 42px;
+
+    & br {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+
+      & br {
+        display: inline;
+      }
+    }
   }
 
   &--small {
     margin-top: 25px;
-  }
 
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      font-size: 21px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 41px;
+    }
   }
 }
 
@@ -134,7 +165,7 @@
   margin-top: 50px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 55px;
+    margin-top: 58px;
   }
 }
 
@@ -143,7 +174,19 @@
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    width: 80%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.advantages__text-small {
+  @media (min-width: $tablet-width) {
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 

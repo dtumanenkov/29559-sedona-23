@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
   }
@@ -14,12 +18,26 @@
   line-height: 26px;
   color: $basic-black;
   margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+    font-size: 30px;
+  }
 }
 
 .search__overview {
   color: $dark-gray;
   margin-bottom: 27px;
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+    margin-bottom: 40px;
+
+    & .br-mobile {
+      display: none;
+    }
+  }
 }
 
 .search__btn {
@@ -27,4 +45,8 @@
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
