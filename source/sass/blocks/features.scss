@@ -48,8 +48,10 @@
     font-size: 21px;
     margin-top: 155px;
   }
+}
 
-  &--accomodation::before {
+.features__title--accomodation {
+  &::before {
     content: "";
     position: absolute;
     width: 39px;
@@ -66,8 +68,10 @@
       top: -95px;
     }
   }
+}
 
-  &--souvenirs::before {
+.features__title--souvenirs {
+  &::before {
     content: "";
     position: absolute;
     width: 32px;
@@ -84,8 +88,10 @@
       top: -100px;
     }
   }
+}
 
-  &--food::before {
+.features__title--food {
+  &::before {
     content: "";
     position: absolute;
     width: 40px;

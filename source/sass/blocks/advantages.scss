@@ -33,28 +33,6 @@
     counter-increment: advantages;
     content: "—№" counter(advantages) "—";
   }
-
-  &--big::before {
-    position: absolute;
-    top: 73px;
-    left: 43%;
-
-    @media (min-width: $tablet-width) {
-      top: 103px;
-      left: 41%;
-    }
-  }
-
-  &--small::before {
-    position: absolute;
-    top: 58px;
-    left: 43%;
-
-    @media (min-width: $tablet-width) {
-      top: 104px;
-      left: 41%;
-    }
-  }
 }
 
 .advantages__item--big {
@@ -62,7 +40,6 @@
   color: $basic-white;
   display: flex;
   flex-direction: column;
-
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -77,6 +54,17 @@
     display: grid;
     grid-template-columns: repeat(3, $desktop-width/3);
   }
+
+  &::before {
+    position: absolute;
+    top: 83px;
+    left: 43%;
+
+    @media (min-width: $tablet-width) {
+      top: 103px;
+      left: 41%;
+    }
+  }
 }
 
 .advantages__item--big--reverse {
@@ -87,7 +75,7 @@
     width: $tablet-width;
     display: flex;
     flex-direction: row-reverse;
-    margin-top:0;
+    margin-top: 0;
 
     &::before {
       position: absolute;
@@ -98,6 +86,19 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+  }
+}
+
+.advantages__item--small {
+  &::before {
+    position: absolute;
+    top: 58px;
+    left: 43%;
+
+    @media (min-width: $tablet-width) {
+      top: 104px;
+      left: 41%;
+    }
   }
 }
 
@@ -128,32 +129,21 @@
     margin-right: auto;
     margin-top: 40px;
   }
+}
 
-  &--reverse {
-    margin-top: 42px;
+.advantages__title--reverse {
+  margin-top: 42px;
+}
 
-    & br {
-      display: none;
-    }
+.advantages__title--small {
+  margin-top: 25px;
 
-    @media (min-width: $tablet-width) {
-
-      & br {
-        display: inline;
-      }
-    }
-  }
-
-  &--small {
-    margin-top: 25px;
-
-    @media (min-width: $tablet-width) {
-      width: 50%;
-      font-size: 21px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 41px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    font-size: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
   }
 }
 
@@ -172,6 +162,7 @@
 .advantages__text--big {
   color: $basic-white;
   margin-bottom: 36px;
+  margin-top: 48px;
 
   @media (min-width: $tablet-width) {
     width: 75%;
@@ -185,13 +176,17 @@
 }
 
 .advantages__text-small {
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
 
     & br {
-      display: none;
+      display: inline;
     }
   }
 }
