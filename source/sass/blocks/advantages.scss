@@ -71,6 +71,12 @@
   color: $basic-white;
   margin-top: 10px;
 
+  &::before {
+    position: absolute;
+    top: 73px;
+    left: 43%;
+  }
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: flex;
@@ -122,6 +128,10 @@
   line-height: 26px;
   margin-top: 50px;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 21px;
     width: 80%;
@@ -132,7 +142,7 @@
 }
 
 .advantages__title--reverse {
-  margin-top: 42px;
+  margin-top: 40px;
 }
 
 .advantages__title--small {
@@ -176,6 +186,10 @@
 }
 
 .advantages__text-small {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
   & br {
     display: none;
   }
