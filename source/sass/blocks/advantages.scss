@@ -143,6 +143,17 @@
 
 .advantages__title--reverse {
   margin-top: 40px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+    & br {
+      display: inline;
+    }
+  }
 }
 
 .advantages__title--small {
@@ -178,6 +189,7 @@
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 55px;
 
     & br {
       display: none;

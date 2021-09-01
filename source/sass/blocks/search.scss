@@ -40,6 +40,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 34px;
     margin-bottom: 40px;
+
+    & br {
+      display: inline;
+    }
   }
 }
 

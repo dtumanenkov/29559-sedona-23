@@ -5,7 +5,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 256px;
+    width: 224px;
+    padding-right: 32px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +23,10 @@
     right: -8px;
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      right: 60px;
+    }
   }
 }
 
