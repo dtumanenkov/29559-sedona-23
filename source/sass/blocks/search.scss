@@ -59,6 +59,16 @@
   margin: 0 auto;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: $mobile-menu-hover;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($color: $basic-white, $alpha: 0.3);
+    background-color: $mobile-menu-down;
+  }
+
   @media (min-width: $tablet-width) {
     width: 458px;
   }

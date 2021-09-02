@@ -33,6 +33,15 @@
       right: 120px;
     }
   }
+
+  &:hover::after {
+    background-image: url("../img/htmlacademy-hover.svg");
+  }
+
+  &:active::after,
+  &:focus::after {
+    background-image: url("../img/htmlacademy-down.svg");
+  }
 }
 
 .copyright__link {
@@ -40,4 +49,5 @@
   font-weight: 400;
   line-height: 26px;
   color: $basic-black;
+  display: block;
 }
