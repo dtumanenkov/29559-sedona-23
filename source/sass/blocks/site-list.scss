@@ -47,11 +47,11 @@
 
   &:nth-child(4n+2) {
     @media (min-width: $tablet-width) {
-      margin-right: $tablet-width/5+5;
+      margin-right: $tablet-width/5 + 5px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: $desktop-width/5+1;
+      margin-right: $desktop-width/5 + 1px;
     }
   }
 

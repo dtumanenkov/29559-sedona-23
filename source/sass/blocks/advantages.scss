@@ -171,6 +171,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 42px;
+
     & br {
       display: inline;
     }
@@ -230,7 +231,7 @@
     }
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     & br {
       display: inline;
     }
@@ -259,6 +260,7 @@
   @media (min-width: $desktop-width) {
     width: 75%;
     margin-top: 55px;
+
     & br {
       display: none;
     }

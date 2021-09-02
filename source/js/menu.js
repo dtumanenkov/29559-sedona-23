@@ -13,4 +13,3 @@ menu_close.addEventListener("click",function(evt){
   menu_popup.classList.add("site-list--mobile");
   menu_close.classList.add("visually-hidden");
 });
-
