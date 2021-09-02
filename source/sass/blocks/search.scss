@@ -9,6 +9,8 @@
 
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
+    padding-bottom: 44px;
+    margin-bottom:0
   }
 }
 
@@ -44,6 +46,10 @@
     & br {
       display: inline;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
   }
 }
 

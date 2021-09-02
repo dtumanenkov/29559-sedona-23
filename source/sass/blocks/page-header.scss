@@ -19,6 +19,11 @@
     width: 156px;
     height: 84px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
 }
 
 .page-header__logo-image {
@@ -29,6 +34,12 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/logotype-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+    background-image: url("../img/logotype-desktop.svg");
   }
 }
 
@@ -173,6 +184,13 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 55px;
+  }
 }
 
 .page-header__welcome {
@@ -191,6 +209,11 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .page-header__main-theme {
@@ -204,5 +227,9 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
   }
 }

@@ -3,6 +3,7 @@
 }
 
 .page-footer__wrapper {
+  width: inherit;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +13,10 @@
     flex-direction: row;
     align-items: center;
     background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 120px;
   }
 }
 
@@ -33,5 +38,6 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
+    margin-top: 10px;
   }
 }
