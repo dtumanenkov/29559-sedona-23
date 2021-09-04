@@ -30,6 +30,12 @@
   }
 }
 
+.site-list--nojs {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
 .site-list__item {
   position: relative;
   height: 46px;
