@@ -9,7 +9,12 @@
   <body class="page__body">
     <header class="container page-header">
       <a class="page-header__logo" href="#">
-        <div class="page-header__logo-image"><span class="visually-hidden">Логотип сайта Sedona</span></div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-image" width="102" height="84" src="img/logotype-mobile.svg"
+            alt="Седона- Город в Аризоне">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -93,12 +98,14 @@
           <h2 class="visually-hidden">Найти гостиницу в городе Седона</h2>
           <strong class="search__caption">Заинтересовались?</strong>
           <p class="search__overview">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="search__btn button" type="submit">Найти гостиницу</button>
+          <a class="button search__btn" href="#" type="submit">Найти гостиницу</a>
         </section>
         <section class="page-main__map map">
           <h2 class="visually-hidden">Где находится город Седона</h2>
-          <div class="map__image"><span class="visually-hidden">Карта с местоположением Седоны</span></div>
-          <div class="map__marker"></div>
+          <iframe class="map__image"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249355.1926036549!2d-111.83154925896694!3d34.79890956972249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1630851221957!5m2!1sru!2sru"
+            width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy">
+          </iframe>
         </section>
       </div>
     </main>
@@ -127,6 +134,9 @@
         <p class="copyright">Разработано
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
+            <picture>
+              <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Ссылка на сайт Htmlacademy">
+            </picture>
           </a>
         </p>
       </div>

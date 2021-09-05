@@ -14,34 +14,6 @@
     width: 400px;
     padding-right: 0;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 34px;
-    bottom: -4px;
-    right: -8px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      right: 60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 120px;
-    }
-  }
-
-  &:hover::after {
-    background-image: url("../img/htmlacademy-hover.svg");
-  }
-
-  &:active::after,
-  &:focus::after {
-    background-image: url("../img/htmlacademy-down.svg");
-  }
 }
 
 .copyright__link {
@@ -49,5 +21,23 @@
   font-weight: 400;
   line-height: 26px;
   color: $basic-black;
-  display: block;
+  display: inline;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__icon {
+  position: absolute;
+  right: -7px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    right: 61px;
+    top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 120px;
+    top: -2px;
+  }
 }

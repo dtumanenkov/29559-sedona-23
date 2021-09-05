@@ -30,16 +30,15 @@
   margin: 0 auto;
   width: 102px;
   height: 84px;
-  background-image: url("../img/logotype.svg");
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/logotype-tablet.svg");
+    width: 156px;
+    height: 84px;
   }
 
   @media (min-width: $desktop-width) {
     width: 187px;
     height: 97px;
-    background-image: url("../img/logotype-desktop.svg");
   }
 }
 

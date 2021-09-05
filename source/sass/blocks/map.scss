@@ -1,9 +1,11 @@
 .map {
   position: relative;
+  width: 320px;
   height: 350px;
   background: $basic-white url("../img/map-mobile.jpg") no-repeat center;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     background: $basic-white url("../img/map-tablet.jpg") no-repeat center;
   }
 
@@ -14,16 +16,4 @@
 
 .map__image {
   background-color: $background-gray;
-}
-
-.map__marker {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-13px, -14px);
-  width: 17px;
-  height: 17px;
-  background-color: $marker-blue;
-  border: 5px solid $basic-white;
-  border-radius: 50%;
 }

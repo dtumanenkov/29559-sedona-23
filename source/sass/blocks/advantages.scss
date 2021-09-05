@@ -122,6 +122,21 @@
       left: 44.5%;
     }
   }
+
+  &:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    left: 20px;
+    bottom: 0;
+    background-color: $gray-separator;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .advantages__header {
