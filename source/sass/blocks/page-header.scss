@@ -26,6 +26,13 @@
   }
 }
 
+.page-header__logo--nojs {
+  position: relative;
+  order: 0;
+  left: unset;
+  transform: unset;
+}
+
 .page-header__logo-image {
   margin: 0 auto;
   width: 102px;
@@ -58,6 +65,11 @@
     width: 1200px;
     background-color: $basic-white;
   }
+}
+
+.page-header__nav--nojs {
+  height: 223px;
+  order: -1;
 }
 
 .page-header__greeting {
@@ -130,6 +142,10 @@
   }
 }
 
+.page-header__greeting--nojs {
+  order: 1;
+}
+
 .page-header__image {
   margin: 0 auto;
   display: block;
@@ -190,6 +206,11 @@
     margin: 0 auto;
     padding-top: 55px;
   }
+}
+
+.page-header__heading--nojs {
+  order: 2;
+
 }
 
 .page-header__welcome {
