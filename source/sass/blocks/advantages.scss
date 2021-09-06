@@ -1,8 +1,8 @@
 .advantages__list {
   @include ul-ol-reset;
-  background-color: $background-gray;
   display: flex;
   flex-direction: column;
+  counter-reset: advantages;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -11,6 +11,7 @@
 }
 
 .advantages__item {
+  position: relative;
   min-height: 167px;
   color: $basic-black;
   background-color: $background-gray;
@@ -23,11 +24,22 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width/3;
   }
+
+  &::before {
+    position: absolute;
+    top: 83px;
+    left: 43%;
+    display: block;
+    counter-increment: advantages;
+    content: "—№" counter(advantages) "—";
+  }
 }
 
 .advantages__item--big {
   background-color: $basic-blue;
   color: $basic-white;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -42,22 +54,93 @@
     display: grid;
     grid-template-columns: repeat(3, $desktop-width/3);
   }
+
+  &::before {
+    position: absolute;
+    top: 83px;
+    left: 43%;
+
+    @media (min-width: $tablet-width) {
+      top: 103px;
+      left: 41%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 110px;
+      left: 45%;
+    }
+  }
 }
 
 .advantages__item--big--reverse {
+  color: $basic-white;
+  margin-top: 10px;
+
+  &::before {
+    position: absolute;
+    top: 73px;
+    left: 43%;
+  }
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 0;
+
+    &::before {
+      position: absolute;
+      top: 105px;
+      left: 80.5%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+
+    &::before {
+      position: absolute;
+      top: 115px;
+      left: 81.5%;
+    }
+  }
+}
+
+.advantages__item--small {
+  &::before {
+    position: absolute;
+    top: 58px;
+    left: 43%;
+
+    @media (min-width: $tablet-width) {
+      top: 104px;
+      left: 41%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 108px;
+      left: 44.5%;
+    }
+  }
+
+  &:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    left: 20px;
+    bottom: 0;
+    background-color: $gray-separator;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .advantages__header {
-  min-height: 211px;
+  min-height: 155px;
 
   @media (min-width: $tablet-width) {
     grid-area: advantages__header;
@@ -74,6 +157,61 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  margin-top: 50px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-top: 50px;
+  }
+}
+
+.advantages__title--reverse {
+  margin-top: 40px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+
+    & br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+  }
+}
+
+.advantages__title--small {
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    font-size: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
+    margin-top: 45px;
+  }
 }
 
 .advantages__text {
@@ -81,10 +219,71 @@
   font-weight: 400;
   line-height: 21px;
   color: $dark-gray;
+  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+  }
 }
 
 .advantages__text--big {
   color: $basic-white;
+  margin-bottom: 36px;
+  margin-top: 48px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & br {
+      display: inline;
+    }
+  }
+}
+
+.advantages__text-small {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 75%;
+    margin-top: 55px;
+
+    & br {
+      display: none;
+    }
+
+    & .br-desktop {
+      display: inline;
+    }
+  }
 }
 
 .advantages__picture {

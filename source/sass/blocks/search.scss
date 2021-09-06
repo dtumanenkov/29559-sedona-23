@@ -1,8 +1,16 @@
 .search {
   min-height: 287px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
+    padding-bottom: 44px;
+    margin-bottom: 0;
   }
 }
 
@@ -11,10 +19,59 @@
   font-weight: 700;
   line-height: 26px;
   color: $basic-black;
+  margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+    font-size: 30px;
+  }
 }
 
 .search__overview {
   color: $dark-gray;
   margin-bottom: 27px;
-  margin-top: 20px;
+  margin-top: 22px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+    margin-bottom: 40px;
+
+    & br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.search__btn {
+  display: block;
+  width: 280px;
+  height: 43px;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $mobile-menu-hover;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($color: $basic-white, $alpha: 0.3);
+    background-color: $mobile-menu-down;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

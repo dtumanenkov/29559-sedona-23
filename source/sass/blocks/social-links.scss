@@ -18,5 +18,62 @@
   background-color: $basic-blue;
   display: inline-block;
   margin-top: 34px;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+}
+
+.social-links__link--twitter {
+  display: block;
+  width: inherit;
+  height: inherit;
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:hover {
+    background-color: $mobile-menu-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $mobile-menu-down;
+    opacity: 0.3;
+  }
+}
+
+.social-links__link--facebook {
+  display: block;
+  width: inherit;
+  height: inherit;
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:hover {
+    background-color: $mobile-menu-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $mobile-menu-down;
+    opacity: 0.3;
+  }
+}
+
+.social-links__link--youtube {
+  display: block;
+  width: inherit;
+  height: inherit;
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:hover {
+    background-color: $mobile-menu-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $mobile-menu-down;
+    opacity: 0.3;
+  }
 }

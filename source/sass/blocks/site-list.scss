@@ -3,14 +3,18 @@
   width: 320px;
   position: absolute;
   top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 4px rgba($color: $basic-black, $alpha: 0.25);
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     height: 56px;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,23 +22,75 @@
   }
 }
 
+.site-list--mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.site-list--nojs {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
 .site-list__item {
-  height: 55px;
+  position: relative;
+  height: 46px;
+  padding-top: 10px;
   background-color: $basic-blue;
+  box-shadow: inset 0 1px 0 rgba($color: $basic-white, $alpha: 0.2), 0 -1px 0 rgba($color: $menu-shadow, $alpha: 0.2);
+
+  &:hover {
+    background-color: $mobile-menu-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $mobile-menu-down;
+  }
 
   @media (min-width: $tablet-width) {
     width: 20%;
     height: 56px;
+    padding-top: 0;
     background-color: $basic-white;
+    box-shadow: none;
   }
 
   &:nth-child(4n+2) {
     @media (min-width: $tablet-width) {
-      margin-right: $tablet-width/5;
+      margin-right: $tablet-width/5 + 5px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: $desktop-width/5;
+      margin-right: $desktop-width/5 + 1px;
+    }
+  }
+
+  &:nth-child(4n) {
+    @media (min-width: $tablet-width) {
+      width: 19%;
+    }
+  }
+
+  &:first-child {
+    box-shadow: none;
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: none;
     }
   }
 }
@@ -44,11 +100,39 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+  display: block;
+  width: inherit;
+  height: inherit;
+
+  &:focus,
+  &:active {
+    color: rgba($color: $basic-white, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
+    width: 100%;
+    height: 41px;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
+    padding-top: 15px;
+
+    &:hover {
+      color: $basic-blue;
+      background-color: $basic-white;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba($color: $basic-black, $alpha: 0.3);
+      background-color: $basic-white;
+    }
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: $tablet-width) {
+    color: $menu-current;
   }
 }

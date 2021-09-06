@@ -1,5 +1,8 @@
 .features {
   @include ul-ol-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     min-height: 330px;
@@ -17,6 +20,8 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width/3;
+    padding-left: 0;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,14 +30,124 @@
 }
 
 .features__item--reverse {
-  order: 1;
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .features__title {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: $basic-black;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 158px;
+  }
+}
+
+.features__title--accomodation {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    left: -49px;
+    top: -8px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: round;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 72px;
+      left: 90px;
+      top: -95px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 161px;
+      top: -98px;
+    }
+  }
+}
+
+.features__title--souvenirs {
+  margin-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 160px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 38px;
+    left: -44px;
+    top: -12px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: round;
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      height: 75px;
+      left: 95px;
+      top: -100px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 166px;
+      top: -101px;
+    }
+  }
+}
+
+.features__title--food {
+  margin-bottom: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: -51px;
+    top: -6px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: round;
+
+    @media (min-width: $tablet-width) {
+      width: 76px;
+      height: 68px;
+      left: 90px;
+      top: -94px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 160px;
+      top: -92px;
+    }
+  }
+}
+
+.features__title--first {
+  margin-top: 35px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 160px;
+  }
 }
 
 .features__text {
@@ -41,4 +156,37 @@
   line-height: 21px;
   color: $dark-gray;
   text-align: left;
+  margin-bottom: 26px;
+
+  & .br-desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 25px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & .br-desktop {
+      display: inline;
+    }
+  }
+}
+
+.features__text--br {
+  @media (min-width: $tablet-width) {
+    width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 75%;
+  }
 }
