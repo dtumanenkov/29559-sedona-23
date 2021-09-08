@@ -231,6 +231,12 @@
   order: 2;
 }
 
+.page-header__heading--catalog {
+  &::after, &::before {
+    display: none;
+  }
+}
+
 .page-header__welcome {
   display: block;
   color: $basic-black;
@@ -276,6 +282,7 @@
 
 .page-header__main-theme--catalog {
   line-height: 24px;
+  margin-bottom: 30px;
 
   &::after {
     content: "";
