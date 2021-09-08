@@ -113,7 +113,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    min-height: 518px;
+    height: 518px;
     background: $basic-white url("../img/back-tablet.jpg") no-repeat center top;
 
     &::before {
@@ -159,6 +159,10 @@
 
 .page-header__greeting--catalog {
   height: 158px;
+
+  @media (min-width: $tablet-width) {
+    height: 290px;
+  }
 }
 
 .page-header__image {
@@ -175,6 +179,11 @@
 
 .page-header__image--catalog {
   margin-top: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 94px;
+    height: 78px;
+  }
 }
 
 .page-header__heading {
@@ -232,8 +241,15 @@
 }
 
 .page-header__heading--catalog {
-  &::after, &::before {
+  &::after,
+  &::before {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+    width: 430px;
+    margin-bottom: 79px;
   }
 }
 
@@ -258,6 +274,13 @@
   @media (min-width: $desktop-width) {
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+.page-header__welcome--catalog {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -292,5 +315,11 @@
     width: 100%;
     height: 1px;
     background-color: $gray-catalog-separator;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
   }
 }

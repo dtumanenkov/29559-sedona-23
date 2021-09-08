@@ -1,12 +1,19 @@
 .gallery {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .gallery__list {
   @include ul-ol-reset;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -15,10 +22,15 @@
 
 .gallery__item {
   margin-top: 22px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width/2;
+    margin-top: 0;
+    width: ($tablet-width - 120) / 2;
     background-color: $input-background;
+    margin-left: unset;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +41,7 @@
 .gallery__item--big {
   @media (min-width: $tablet-width) {
     width: 100%;
-    height: 400px;
+    height: 480px;
   }
 }
 
@@ -48,11 +60,48 @@
     height: 1px;
     background-color: $gray-catalog-separator;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .gallery__link {
   display: block;
   height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 267px;
+  }
+}
+
+.gallery__link--big {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.gallery__picture {
+  display: block;
+  width: auto;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 267px;
+  }
+}
+
+.gallery__picture--big {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .gallery__image {
@@ -61,7 +110,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: ($tablet-width - 120) / 2;
     height: 267px;
   }
 
@@ -70,12 +119,22 @@
   }
 }
 
+.gallery__image--big {
+  @media (min-width: $tablet-width) {
+    width: inherit;
+    height: 400px;
+  }
+}
+
 .gallery__text {
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     background-color: $input-background;
-    width: 100%;
+    width: auto;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 15px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
@@ -89,7 +148,6 @@
   font-weight: 700;
   line-height: 24px;
   color: $basic-black;
-  width: 50%;
   grid-area: title;
   width: 209px;
   margin-top: 10px;
@@ -97,7 +155,7 @@
 }
 
 .gallery__author {
-  width: 50%;
+  width: 100%;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -118,6 +176,8 @@
   border: 0;
   grid-area: like;
   padding-left: 37px;
+  display: flex;
+  flex-direction: row;
 
   &::before {
     content: "";
@@ -125,7 +185,6 @@
     width: 23px;
     height: 21px;
     left: 0;
-    top: 0;
     background: $basic-white url("../img/like-icon.svg") no-repeat center;
   }
 
