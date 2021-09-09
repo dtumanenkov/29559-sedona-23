@@ -7,6 +7,11 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .gallery__list {
@@ -35,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width/3;
+    position: relative;
   }
 }
 
@@ -54,6 +60,10 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
   }
 }
 
@@ -148,10 +158,19 @@
     margin-left: 20px;
     margin-right: 15px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr auto;
     grid-template-areas:
       "title like"
       "author like";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+    margin-right: unset;
+    background-color: rgba($basic-black, $alpha: 0.3);
   }
 }
 
@@ -168,6 +187,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
 
 .gallery__author {
@@ -183,6 +206,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
   }
 }
 
@@ -211,27 +238,50 @@
       right: 45px;
       left: unset;
     }
+
+    @media (min-width: $desktop-width) {
+      background: transparent url("../img/like-icon-white.svg") no-repeat center;
+      right: 60px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    width: 62px;
+    display: block;
     background-color: inherit;
-    padding-top: 28px;
-    padding-right: 15px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 63px;
+    color: $basic-white;
+    background-color: unset;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+
   }
 }
 
 .gallery__like--big {
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    background-color: inherit;
     padding-top: 28px;
     padding-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
   }
 
   &::before {
     @media (min-width: $tablet-width) {
       right: 45px;
+      left: unset;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 62px;
       left: unset;
     }
   }
