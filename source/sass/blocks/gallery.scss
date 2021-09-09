@@ -39,13 +39,13 @@
 }
 
 .gallery__item:nth-child(2n+1) {
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     background-color: $gray-catalog-odd;
   }
 }
 
 .gallery__item:first-child {
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     background-color: $input-background;
   }
 }
@@ -234,5 +234,5 @@
       right: 45px;
       left: unset;
     }
-}
+  }
 }

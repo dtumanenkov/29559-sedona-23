@@ -163,6 +163,10 @@
   @media (min-width: $tablet-width) {
     height: 290px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 301px;
+  }
 }
 
 .page-header__image {
@@ -183,6 +187,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 94px;
     height: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 80px;
+    margin-top: 100px;
   }
 }
 
@@ -250,6 +259,12 @@
     margin-top: 59px;
     width: 430px;
     margin-bottom: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-color: $basic-white;
+    margin: 0;
   }
 }
 

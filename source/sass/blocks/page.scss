@@ -21,9 +21,10 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    background-color: $desktop-background-gray;
   }
 }
 
-.page__body--catalog{
+.page__body--catalog {
   width: 280px;
 }
