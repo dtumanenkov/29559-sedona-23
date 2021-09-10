@@ -153,10 +153,9 @@
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
-    width: auto;
+    width: calc(100% - 20px);
     height: 80px;
     margin-left: 20px;
-    margin-right: 15px;
     display: grid;
     grid-template-columns: 3fr auto;
     grid-template-areas:
@@ -235,38 +234,37 @@
     background: url("../img/like-icon.svg") no-repeat center;
 
     @media (min-width: $tablet-width) {
-      right: 45px;
+      right: 62px;
       left: unset;
     }
 
     @media (min-width: $desktop-width) {
       background: transparent url("../img/like-icon-white.svg") no-repeat center;
-      right: 60px;
+      right: 62px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    width: 62px;
+    width: 53px;
     display: block;
+    padding-left: 0;
+    padding-right: 0;
     background-color: inherit;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    width: 63px;
     color: $basic-white;
     background-color: unset;
     padding-left: 0;
     padding-right: 0;
     text-align: left;
-
   }
 }
 
 .gallery__like--big {
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    padding-top: 28px;
     padding-right: 5px;
   }
 
@@ -276,11 +274,6 @@
 
   &::before {
     @media (min-width: $tablet-width) {
-      right: 45px;
-      left: unset;
-    }
-
-    @media (min-width: $desktop-width) {
       right: 62px;
       left: unset;
     }
