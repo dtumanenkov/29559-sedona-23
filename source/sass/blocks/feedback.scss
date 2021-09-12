@@ -74,6 +74,11 @@
     top: 840px;
     left: 184px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 400px;
+    top: 766px;
+  }
 }
 
 .feedback__popup--sucсess {
@@ -83,5 +88,10 @@
   @media (min-width: $tablet-width) {
     left: 62px;
     top: 680px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 280px;
+    top: 495px;
   }
 }
