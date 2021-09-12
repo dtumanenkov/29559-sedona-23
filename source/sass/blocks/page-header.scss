@@ -351,6 +351,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-top: 3px;
     margin-bottom: 33px;
   }
 }
@@ -415,6 +416,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+
     &::after {
       display: none;
     }
