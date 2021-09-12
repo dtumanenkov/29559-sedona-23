@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logotype.svg" width="102" height="84" alt="Логотип города Седона">
+    <header class="container page-header">
+      <a class="page-header__logo page-header__logo--nojs" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-image" width="102" height="84" src="img/logotype-mobile.svg"
+            alt="Седона- Город в Аризоне">
+        </picture>
       </a>
-      <nav class="page-header__nav main-nav">
+      <nav class="page-header__nav page-header__nav--nojs main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        <ul class="main-nav__list site-list">
+        <button class="main-nav__toggle main-nav__toggle--close visually-hidden" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="main-nav__list site-list site-list--mobile site-list--nojs">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
           </li>
@@ -29,13 +34,13 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__greeting">
-        <img class="page-header__image" src="img/Sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепный город Седона!">
+      <div class="page-header__greeting page-header__greeting--form page-header__greeting--nojs">
+        <img class="page-header__image page-header__image--form" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепный город Седона!">
       </div>
-      <div class="page-header__heading">
+      <div class="page-header__heading page-header__heading--nojs page-header__heading--form">
         <h1 class="visually-hidden">Обратная связь на сайте Седона!</h1>
-        <strong class="page-header__welcome">Оставьте свой отзыв</strong>
-        <p class="page-header__main-theme">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <strong class="page-header__welcome page-header__welcome--form">Оставьте свой отзыв</strong>
+        <p class="page-header__main-theme page-header__main-theme--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </header>
     <main class="page-main">
@@ -43,50 +48,58 @@
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback__form default-form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="feedback__form--wrapper">
-            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--person">
+            <fieldset class="default-form__fieldset feedback__fieldset--person">
               <legend class="default-form__title">Представьтесь:</legend>
               <ul class="default-form__list">
-                <li>
+                <li class="default-form__item">
                   <label class="default-form__label default-form__label--text">Имя*:</label><input class="default-form__input" type="text" placeholder="Петр" name="name">
                 </li>
-                <li>
+                <li class="default-form__item">
                   <label class="default-form__label default-form__label--text">Фамилия*:</label><input class="default-form__input" type="text" placeholder="Иванов" name="surname">
                 </li>
-                <li>
-                  <label class="default-form__label default-form__label--text">Отчество:</label><input class="default-form__input" type="text" placeholder="Александрович" name="middle-name">
+                <li class="default-form__item">
+                  <label class="default-form__label default-form__label--text">Отчество: </label><input class="default-form__input" type="text" placeholder="Александрович" name="middle-name">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--contacts">
-              <legend class="default-form__title">Контактная информация:</legend>
+            <fieldset class="default-form__fieldset default-form__fieldset--contacts feedback__fieldset--contacts">
+              <legend class="default-form__title default-form__title--contacts">Контактная информация:</legend>
               <ul class="default-form__list default-form__list--contacts">
-                <li>
-                  <label class="default-form__label--text">Контактный телефон*:</label><input class="default-form__input" type="tel" placeholder="Введите телефон" name="phone">
+                <li class="default-form__item default-form__item--contacts">
+                  <label class="default-form__label--contacts">Контактный телефон*:</label>
+                  <div class="default-form__text-input-wrapper">
+                    <input class="default-form__input default-form__input--phone" type="tel" placeholder="Введите телефон" name="phone">
+                    <div class="default-form__icon default-form__icon--phone"></div>
+                  </div>
                 </li>
-                <li>
-                  <label class="default-form__label--text">Электронная почта*:</label><input class="default-form__input" type="email" placeholder="Введите e-mail" name="email">
+                <li class="default-form__item default-form__item--contacts">
+                  <label class="default-form__label--contacts">Электронная почта*:</label>
+                  <div class="default-form__text-input-wrapper">
+                    <input class="default-form__input default-form__input--phone" type="email" placeholder="Введите e-mail" name="email">
+                    <div class="default-form__icon default-form__icon--email"></div>
+                  </div>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--impression">
+            <fieldset class="default-form__fieldset default-form__fieldset--impression feedback__fieldset--impression">
               <legend class="default-form__title">Ваше общее впечатление:</legend>
               <ul class="default-form__list">
-                <li>
+                <li class="default-form__item">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-positive" checked value="positive">
                   <label class="default-form__label--radio" for="filter-positive">Скорее положительное</label>
                 </li>
-                <li>
+                <li class="default-form__item">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-negative" value="negative">
                   <label class="default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
                 </li>
-                <li>
+                <li class="default-form__item">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
                   <label class="default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--landmark">
-              <legend class="default-form__title">Посещенные достопримечательности:</legend>
+            <fieldset class="default-form__fieldset default-form__fieldset--landmark feedback__fieldset--landmark">
+              <legend class="default-form__title default-form__title--landmark">Посещенные достопримечательности:</legend>
               <ul class="default-form__list default-form__list--landmark">
                 <li class="default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
@@ -106,19 +119,19 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset feedback__fieldset feedback__fieldset--emotions">
-              <legend class="default-form__title">Опишите свои эмоции:</legend>
+            <fieldset class="default-form__fieldset default-form__fieldset--emotions feedback__fieldset--emotions">
+              <legend class="default-form__title default-form__title--emotions">Опишите свои эмоции:</legend>
               <textarea class="default-form__textarea" required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea>
             </fieldset>
             <button class="default-form__button feedback__button button" type="submit">Отправить отзыв</button>
             <span class="default-form__required">*- обязательные поля</span>
           </div>
-          <div class="feedback__popup feedback__popup--failure">
+          <div class="feedback__popup feedback__popup--failure visually-hidden">
             <strong class="default-form__title default-form__title--failure">Что-то пошло не так!</strong>
             <p class="default-form__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <button class="default-form__button feedback__button button" type="submit">ок</button>
           </div>
-          <div class="feedback__popup feedback__popup--sucсses">
+          <div class="feedback__popup feedback__popup--sucсses visually-hidden">
             <strong class="default-form__title default-form__title--failure">Ваш отзыв отправлен!</strong>
             <p class="default-form__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
             <button class="default-form__button feedback__button button" type="submit">Закрыть окно</button>
@@ -126,34 +139,36 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__hashtag" href="#">
-          <em>#visitsedona</em>
+    <footer class="container page-footer page-footer--catalog">
+      <div class="page-footer__wrapper page-footer__wrapper--catalog">
+        <a class="page-footer__hashtag-link" href="#">
+          <span class="page-footer__hashtag">#visitsedona</span>
         </a>
         <ul class="social-links">
           <li class="social-links__item">
-            <a class="social-links__link" href="https://twitter.com/">
+            <a class="social-links__link social-links__link--twitter" href="https://twitter.com/">
               <span class="visually-hidden">Седона в Твитере</span>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link" href="https://facebook.com/">
+            <a class="social-links__link social-links__link--facebook" href="https://facebook.com/">
               <span class="visually-hidden">Седона в Фейсбуке</span>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link" href="https://youtube.com/">
+            <a class="social-links__link social-links__link--youtube" href="https://youtube.com/">
               <span class="visually-hidden">Седона в Ютуб</span>
             </a>
           </li>
         </ul>
-        <p class="copyright">Разработано
+        <p class="copyright"><span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
+            <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Ссылка на сайт Htmlacademy">
           </a>
         </p>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
