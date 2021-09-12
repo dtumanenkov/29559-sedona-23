@@ -32,6 +32,10 @@
       "feedback__fieldset--landmark feedback__fieldset--landmark"
       "feedback__fieldset--emotions feedback__fieldset--emotions";
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 600px);
+  }
 }
 
 .feedback__fieldset--person {

@@ -24,6 +24,12 @@
     padding-left: 58px;
     border-bottom: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-left: 80px;
+    padding-right: 120px;
+  }
 }
 
 .default-form__fieldset--contacts {
@@ -35,6 +41,10 @@
     padding-right: 60px;
     margin-top: 50px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
   }
 }
 
@@ -56,6 +66,12 @@
       background-color: $gray-form-separator;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 131px;
+    position: relative;
+    border-bottom: none;
+  }
 }
 
 .default-form__fieldset--landmark {
@@ -67,6 +83,15 @@
     padding-left: 60px;
     padding-right: 60px;
     margin-top: 15px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 
@@ -79,6 +104,13 @@
     padding-right: 60px;
     margin-top: 25px;
     padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 240px);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 120px;
   }
 }
 
@@ -95,6 +127,16 @@
     line-height: 26px;
     text-align: left;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+}
+
+.default-form__title--person {
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -123,6 +165,22 @@
       right: -185px;
       top: 9px;
       background-color: $gray-form-separator;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 72px;
+
+    &::before {
+      width: 280px;
+      left: -342px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -342px;
     }
   }
 }
@@ -154,6 +212,22 @@
       right: -170px;
       top: 25px;
       background-color: $gray-form-separator;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 58px;
+
+    &::before {
+      width: 280px;
+      left: -326px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -326px;
     }
   }
 }
@@ -216,6 +290,22 @@
       background-color: $gray-form-separator;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 54px;
+
+    &::before {
+      width: 280px;
+      left: -354px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -354px;
+    }
+  }
 }
 
 .default-form__list {
@@ -230,8 +320,9 @@
 
 .default-form__list--contacts {
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: row;
-    align-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -245,7 +336,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 0;
   }
 }
 
@@ -266,6 +360,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .default-form__item--impression {
@@ -285,7 +385,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width / 4;
+    width: auto;
     justify-content: space-between;
   }
 
@@ -312,6 +412,27 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 18px;
+  }
+}
+
+.default-form__label--contacts-right {
+  @media (min-width: $desktop-width) {
+    width: 220px;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 14px;
+  }
+}
+
+.default-form__span {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .default-form__text-input-wrapper {
@@ -337,6 +458,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 76px;
     padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
   }
 }
 
@@ -368,8 +493,12 @@
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
-    width: 570px;
+    width: 257px;
     padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
   }
 }
 
@@ -490,6 +619,11 @@
     margin-left: 60px;
     width: 324px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 120px;
+    width: 480px;
+  }
 }
 
 .default-form__button--popup {
@@ -524,6 +658,10 @@
     padding-right: 60px;
     padding-top: 18px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
   }
 }
 
