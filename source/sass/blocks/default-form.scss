@@ -55,6 +55,13 @@
   margin-bottom: 0;
 }
 
+.default-form__title--sucсses {
+  background-color: $basic-white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 40px;
+}
+
 .default-form__title--emotions {
   margin-bottom: 15px;
 }
@@ -168,7 +175,6 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-
 }
 
 .default-form__input {
@@ -274,17 +280,21 @@
 }
 
 .default-form__message {
-  width: 237px;
-  margin: 0 auto;
-  padding-bottom: 24px;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 38px;
   padding-top: 25px;
   line-height: 24px;
+  margin: 0;
   text-align: center;
+  background-color: $basic-white;
 }
 
 .default-form__button {
   width: 280px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
 }
 
@@ -292,9 +302,19 @@
   width: 180px;
 }
 
+.default-form__button--success {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
 .default-form__popup {
   width: 320px;
   height: 280px;
-  background-color: burlywood;
+  background-color: $input-background;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.default-form__popup-success {
+  height: 323px;
 }
