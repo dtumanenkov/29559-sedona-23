@@ -15,6 +15,7 @@
 }
 
 .feedback__form--wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 37px;
@@ -62,12 +63,14 @@
 
 .feedback__popup {
   display: flex;
-  height: 100%;
   flex-direction: column;
   align-content: space-around;
 }
 
 .feedback__popup--failure {
+  position: absolute;
+  top: 1320px;
+
   @media (min-width: $tablet-width) {
     width: 400px;
     height: 347px;
@@ -75,6 +78,8 @@
 }
 
 .feedback__popup--sucсses {
+  position: absolute;
+
   @media (min-width: $tablet-width) {
     width: 640px;
     height: 347px;
