@@ -494,6 +494,20 @@
   padding-left: 21px;
 }
 
+.default-form__input:hover {
+  background-color: $gray-button-down;
+}
+
+.default-form__input:active,
+.default-form__input:focus {
+  background-color: $basic-white;
+  height: 48px;
+  padding-left: 17px;
+  border: 4px solid $gray-catalog-separator;
+  outline: 0;
+  border-radius: 0;
+}
+
 .default-form__input--phone {
   margin-left: 0;
 
@@ -549,6 +563,36 @@
   border: 3px solid $dark-gray;
 }
 
+.default-form__radio:hover + label::before,
+.default-form__radio:hover + label::after,
+.default-form__checkbox:hover + label::before,
+.default-form__checkbox:hover + label::after,
+.default-form__radio:checked:hover + label::before,
+.default-form__checkbox:checked:hover + label::before,
+.default-form__checkbox:checked:hover + label::after {
+  background-color: $gray-catalog-separator;
+  border-color: $gray-catalog-separator;
+}
+
+.default-form__radio:checked:hover + label::after {
+  background-color: $dark-gray;
+  border-color: $dark-gray;
+}
+
+.default-form__radio:active + label::before,
+.default-form__radio:active + label::after,
+.default-form__checkbox:active + label::before,
+.default-form__checkbox:active + label::after,
+.default-form__radio:checked:active + label::before,
+.default-form__checkbox:checked:active + label::before {
+  background-color: $gray-button-down;
+  border-color: $gray-button-down;
+}
+
+.default-form__radio:checked:active + label::after {
+  border-color: rgba($color: $dark-gray, $alpha: 0.3);
+  background-color: rgba($color: $dark-gray, $alpha: 0.3);
+}
 .default-form__checkbox + label::before {
   position: absolute;
   content: "";
@@ -571,6 +615,11 @@
   border-radius: 5px;
   border: 5px solid $input-background;
   background: $input-background url("../img/tick.svg") no-repeat center;
+}
+
+.default-form__checkbox:checked:active + label::after{
+  background: $gray-button-down url("../img/tick-active.svg") no-repeat center;
+  border-color: $gray-button-down;
 }
 
 .default-form__textarea {
