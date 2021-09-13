@@ -693,6 +693,20 @@
   }
 }
 
+.default-form__button:hover {
+  background-color: $mobile-menu-hover;
+}
+
+.default-form__button:active,
+.default-form__button:focus {
+  background-color: $mobile-menu-down;
+  color: rgba($color: $basic-white, $alpha: 0.3);
+}
+
+.default-form__button:disabled {
+  background-color: $gray-catalog-separator;
+}
+
 .default-form__button--popup {
   width: 180px;
 

@@ -175,12 +175,28 @@
   margin-left: 24px;
   background: transparent url("../img/replay.svg") no-repeat;
 
+  &:hover {
+    background-image: url("../img/replay-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/replay-active.svg");
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 38px;
     left: 11px;
     background: transparent url("../img/replay-tablet.svg") no-repeat;
     z-index: 3;
+
+    &:hover {
+      background-image: url("../img/replay-tablet-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/replay-tablet-active.svg");
+    }
   }
 }
 
@@ -191,12 +207,28 @@
   margin-left: auto;
   background: transparent url("../img/subtitles.svg") no-repeat;
 
+  &:hover {
+    background-image: url("../img/subtitles-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/subtitles-active.svg");
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 38px;
     right: 60px;
     background: transparent  url("../img/subtitles-tablet.svg") no-repeat;
     z-index: 3;
+
+    &:hover {
+      background-image: url("../img/subtitles-tablet-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/subtitles-tablet-active.svg");
+    }
   }
 }
 
@@ -206,11 +238,27 @@
   margin-right: 22px;
   background: transparent url("../img/fullscreen.svg") no-repeat;
 
+  &:hover {
+    background-image: url("../img/fullscreen-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/fullscreen-active.svg");
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 38px;
     right: 19px;
     background: transparent  url("../img/fullscreen-tablet.svg") no-repeat;
     z-index: 3;
+
+    &:hover {
+      background-image: url("../img/fullscreen-hover-tablet.svg");
+    }
+
+    &:active {
+      background-image: url("../img/fullscreen-active-tablet.svg");
+    }
   }
 }
