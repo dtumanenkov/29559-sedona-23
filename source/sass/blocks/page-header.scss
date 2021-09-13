@@ -116,6 +116,11 @@
     height: 518px;
     background: $basic-white url("../img/back-tablet.jpg") no-repeat center top;
 
+    @media (min-resolution: 2dppx) {
+      background-image:  url("../img/back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+
     &::before {
       border-bottom: none;
       border-right: none;
