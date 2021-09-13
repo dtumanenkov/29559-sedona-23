@@ -593,6 +593,7 @@
   border-color: rgba($color: $dark-gray, $alpha: 0.3);
   background-color: rgba($color: $dark-gray, $alpha: 0.3);
 }
+
 .default-form__checkbox + label::before {
   position: absolute;
   content: "";
@@ -617,7 +618,7 @@
   background: $input-background url("../img/tick.svg") no-repeat center;
 }
 
-.default-form__checkbox:checked:active + label::after{
+.default-form__checkbox:checked:active + label::after {
   background: $gray-button-down url("../img/tick-active.svg") no-repeat center;
   border-color: $gray-button-down;
 }
