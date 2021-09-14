@@ -23,7 +23,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, calc(#{$tablet-width} / 2));
     grid-gap: 0;
     margin-bottom: 60px;
     grid-template-areas:
