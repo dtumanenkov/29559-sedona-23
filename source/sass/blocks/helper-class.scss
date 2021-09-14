@@ -21,6 +21,12 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    background-color: $desktop-background-gray;
+    background-color: $basic-white;
   }
+}
+
+.container--catalog {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

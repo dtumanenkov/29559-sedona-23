@@ -2,17 +2,29 @@
   width: 121px;
   margin-left: 95px;
   position: relative;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 224px;
-    padding-right: 32px;
-    text-align: center;
+    flex-basis: $tablet-width / 3;
+    padding-bottom: 0;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
-    padding-right: 0;
+    flex-basis: $desktop-width / 3;
+  }
+}
+
+.copyright__text {
+  @media (min-width: $tablet-width) {
+    width: min-content;
+    line-height: 26px;
+    margin-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 160px;
   }
 }
 
@@ -38,6 +50,10 @@
 
   @media (min-width: $desktop-width) {
     right: 120px;
-    top: -2px;
+    top: -5px;
   }
+}
+
+.copyright__icon:hover {
+  background: transparent url("../img/htmlacademy-hover.svg") no-repeat center;
 }
