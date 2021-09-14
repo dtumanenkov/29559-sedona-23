@@ -135,6 +135,10 @@
     margin-left: 93px;
     margin-top: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
 }
 
 .video__toggle {

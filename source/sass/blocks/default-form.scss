@@ -36,7 +36,7 @@
   padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 120px);
+    width: calc(#{$tablet-width} - 120px);
     padding-left: 60px;
     padding-right: 60px;
     margin-top: 50px;
@@ -55,6 +55,8 @@
     padding-left: 60px;
     position: relative;
     border-bottom: none;
+    width: calc((#{$tablet-width} - 120px) / 2);
+    padding-right: 0;
 
     &::after {
       position: absolute;
@@ -68,6 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: calc((#{$desktop-width} - 240px) / 2 - 11px);
     padding-left: 131px;
     position: relative;
     border-bottom: none;
@@ -79,7 +82,7 @@
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 120px);
+    width: calc(#{$tablet-width} - 120px);
     padding-left: 60px;
     padding-right: 60px;
     margin-top: 15px;
@@ -99,7 +102,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 120px);
+    width: calc(#{$tablet-width} - 120px);
     padding-left: 60px;
     padding-right: 60px;
     margin-top: 25px;
@@ -512,7 +515,7 @@
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
-    width: 257px;
+    width: 100%;
     padding-right: 0;
   }
 
@@ -687,7 +690,7 @@
     width: 324px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 120px;
     width: 480px;
   }

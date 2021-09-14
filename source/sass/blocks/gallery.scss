@@ -155,7 +155,7 @@
     background-color: inherit;
     width: calc(100% - 20px);
     height: 80px;
-    margin-left: 20px;
+    padding-left: 20px;
     display: grid;
     grid-template-columns: 3fr auto;
     grid-template-areas:
@@ -167,7 +167,6 @@
     width: calc(100% - 20px);
     position: absolute;
     bottom: 0;
-    margin-left: 20px;
     margin-right: unset;
     background-color: rgba($basic-black, $alpha: 0.3);
   }
@@ -224,6 +223,7 @@
   padding-left: 37px;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -245,7 +245,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 53px;
+    width: 86px;
     display: block;
     padding-left: 0;
     padding-right: 0;
@@ -277,5 +277,13 @@
       right: 62px;
       left: unset;
     }
+  }
+}
+
+.gallery__like-count {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: left;
+    padding-left: 34px;
   }
 }
