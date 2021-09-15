@@ -235,13 +235,18 @@
     display: none;
   }
 
+  & .br-mobile {
+    display: inline;
+  }
+
   @media (min-width: $tablet-width) {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
 
-    & br {
+    & br,
+    & .br-mobile {
       display: none;
     }
   }
