@@ -291,6 +291,12 @@
   }
 }
 
+.page-header__heading--index {
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
 .page-header__heading--nojs {
   order: 2;
 }
@@ -356,6 +362,14 @@
   @media (min-width: $desktop-width) {
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+.page-header__welcome--index {
+  @media (min-width: $tablet-width) {
+    & .br-desktop {
+      display: inline;
+    }
   }
 }
 
