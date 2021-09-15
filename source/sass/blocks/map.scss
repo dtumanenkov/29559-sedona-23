@@ -5,11 +5,24 @@
   background: $background-gray url("../img/map-mobile.jpg") no-repeat center;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: $tablet-width;
     background: $background-gray url("../img/map-tablet.jpg") no-repeat center;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     background: $background-gray url("../img/map-desktop.jpg") no-repeat center;
+  }
+}
+
+.map__image {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }

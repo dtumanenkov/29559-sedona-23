@@ -148,6 +148,8 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 
     &::before {
@@ -173,7 +175,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 72px;
 
     &::before {
@@ -195,6 +198,8 @@
     width: 308px;
     text-align: center;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 59px;
 
     &::before {
@@ -220,7 +225,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 58px;
 
     &::before {
@@ -276,6 +282,8 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 55px;
 
     &::before {
@@ -301,7 +309,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 54px;
 
     &::before {
@@ -385,7 +394,8 @@
 }
 
 .default-form__item--landmark {
-  padding-bottom: 34px;
+  padding-bottom: 32px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width / 3.5;
@@ -483,6 +493,10 @@
   position: relative;
   cursor: pointer;
   user-select: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .default-form__input {
@@ -627,27 +641,28 @@
 }
 
 .default-form__textarea {
-  width: 100%;
-  height: 160px;
+  width: 240px;
+  height: 118px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   background-color: $input-background;
   border: 0;
-  padding: 0;
   margin-bottom: 40px;
   resize: none;
+  padding: 13px 23px 29px 21px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(#{$tablet-width} - 160px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(#{$desktop-width} - 280px);
+  }
 }
 
 .default-form__textarea::placeholder {
   color: $basic-black;
-  padding-left: 19px;
-  padding-top: 14px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 18px;
-    padding-left: 20px;
-  }
 }
 
 .default-form__message {
