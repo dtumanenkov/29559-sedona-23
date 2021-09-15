@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="container page-header">
@@ -41,10 +41,10 @@
       <div class="page-header__greeting page-header__greeting--nojs">
         <img class="page-header__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона!">
       </div>
-      <div class="page-header__heading page-header__heading--nojs">
+      <div class="page-header__heading page-header__heading--index page-header__heading--nojs">
         <h1 class="visually-hidden">Седона - сайт небольшого городока в Аризоне</h1>
-        <strong class="page-header__welcome">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</strong>
-        <p class="page-header__main-theme">Рассмотрим 5 причин, по которым<br>Седона круче, чем гранд каньон!</p>
+        <strong class="page-header__welcome page-header__welcome--index">Седона — небольшой<br>&nbsp;городок в Аризоне,<br class="br-desktop">&nbsp;заслуживающий большего!</strong>
+        <p class="page-header__main-theme">Рассмотрим 5 причин, по которым<br>&nbsp;Седона круче, чем гранд каньон!</p>
       </div>
     </header>
     <main class="page-main">
@@ -55,7 +55,7 @@
             <li class="advantages__item advantages__item--big">
               <div class="advantages__header">
                 <h3 class="advantages__title">Настоящий городок</h3>
-                <p class="advantages__text advantages__text--big">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+                <p class="advantages__text advantages__text--big">Седона не аттракцион для туристов,<br class="br-mobile">&nbsp;там течет своя жизнь</p>
               </div>
               <picture class="advantages__picture">
                 <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
@@ -65,22 +65,22 @@
               <ul class="advantages__nested-list features">
                 <li class="features__item">
                   <h4 class="features__title features__title--first features__title--accomodation">Жилье</h4>
-                  <p class="features__text">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
+                  <p class="features__text features__text--br">Рекомендуем пожить в<br class="br-tablet">настоящем мотеле, все как в<br>кино!</p>
                 </li>
                 <li class="features__item features__item--reverse">
                   <h4 class="features__title features__title--souvenirs">Сувениры</h4>
-                  <p class="features__text">Не только китайского,<br class="br-desktop"> но и<br> местного производства!</p>
+                  <p class="features__text">Не только китайского,<br class="br-desktop">&nbsp;но и<br>местного производства!</p>
                 </li>
                 <li class="features__item">
                   <h4 class="features__title features__title--food">Еда</h4>
-                  <p class="features__text features__text--br">Всегда заказывайте<br> фирменный бургер, Вы не<br> разочаруетесь!</p>
+                  <p class="features__text features__text--br">Всегда заказывайте<br class="br-tablet">фирменный бургер,<br class="br-tablet br-desktop">&nbsp;Вы не<br>разочаруетесь!</p>
                 </li>
               </ul>
             </li>
             <li class="advantages__item advantages__item--big advantages__item--big--reverse">
               <div class="advantages__header">
-                <h3 class="advantages__title advantages__title--reverse">Там есть<br> мост дьявола</h3>
-                <p class="advantages__text advantages__text--big">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+                <h3 class="advantages__title advantages__title--reverse">Там есть<br>&nbsp;мост дьявола</h3>
+                <p class="advantages__text advantages__text--big">Да, по нему можно пройти!<br>&nbsp;Если вы осмелитесь, конечно</p>
               </div>
               <picture class="advantages__picture">
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
@@ -90,29 +90,29 @@
             </li>
             <li class="advantages__item advantages__item--small">
               <h3 class="advantages__title advantages__title--small">Небольшая площадь</h3>
-              <p class="advantages__text advantages__text-small">Все интересные места<br> находятся очень близко</p>
+              <p class="advantages__text advantages__text-small">Все интересные места<br>&nbsp;находятся очень близко</p>
             </li>
             <li class="advantages__item advantages__item--small">
                 <h3 class="advantages__title advantages__title--small">Красивая дорога</h3>
-                <p class="advantages__text advantages__text-small">Ехать в Седону из<br> Лас-Вегаса совсем<br class="br-desktop"> не скучно!</p>
+                <p class="advantages__text advantages__text-small">Ехать в Седону из<br>&nbsp;Лас-Вегаса совсем<br class="br-desktop">&nbsp;не скучно!</p>
             </li>
             <li class="advantages__item advantages__item--small">
               <h3 class="advantages__title advantages__title--small">Мало туристов</h3>
-              <p class="advantages__text advantages__text-small">Большинство едет в<br> гранд каньон и<br> толпится там</p>
+              <p class="advantages__text advantages__text-small">Большинство едет в<br>&nbsp;гранд каньон и<br>&nbsp;толпится там</p>
             </li>
           </ol>
         </section>
         <section class="page-main__search search">
           <h2 class="visually-hidden">Найти гостиницу в городе Седона</h2>
           <strong class="search__caption">Заинтересовались?</strong>
-          <p class="search__overview">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="button search__btn" href="#" type="submit">Найти гостиницу</a>
+          <p class="search__overview">Укажите предполагаемые даты поездки,<br>&nbsp;и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="button search__btn" href="#">Найти гостиницу</a>
         </section>
         <section class="page-main__map map">
           <h2 class="visually-hidden">Где находится город Седона</h2>
           <iframe class="map__image"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249355.1926036549!2d-111.83154925896694!3d34.79890956972249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1630851221957!5m2!1sru!2sru"
-            width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy">
+            width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy">
           </iframe>
         </section>
       </div>
@@ -147,6 +147,6 @@
         </p>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>

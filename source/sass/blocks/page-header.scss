@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     width: 156px;
     height: 84px;
+    z-index: 10;
   }
 
   @media (min-width: $desktop-width) {
@@ -291,6 +292,12 @@
   }
 }
 
+.page-header__heading--index {
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
 .page-header__heading--nojs {
   order: 2;
 }
@@ -310,7 +317,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     background-color: $basic-white;
-    margin-top: 45px;
+    margin-top: 35px;
     margin-bottom: 37px;
   }
 }
@@ -356,6 +363,14 @@
   @media (min-width: $desktop-width) {
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+.page-header__welcome--index {
+  @media (min-width: $tablet-width) {
+    & .br-desktop {
+      display: inline;
+    }
   }
 }
 

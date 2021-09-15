@@ -183,10 +183,20 @@
 
 .features__text--br {
   @media (min-width: $tablet-width) {
-    width: 60%;
+    & .br-tablet {
+      display: inline;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 75%;
+
+    & .br-tablet {
+      display: none;
+    }
+
+    & .br-desktop {
+      display: inline;
+    }
   }
 }

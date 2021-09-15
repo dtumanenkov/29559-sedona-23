@@ -228,11 +228,15 @@
 
 .advantages__text--big {
   color: $basic-white;
-  margin-bottom: 36px;
-  margin-top: 48px;
+  margin: 48px auto 36px auto;
+  width: 90%;
 
   & br {
     display: none;
+  }
+
+  & .br-mobile {
+    display: inline;
   }
 
   @media (min-width: $tablet-width) {
@@ -241,7 +245,8 @@
     margin-right: auto;
     margin-top: 55px;
 
-    & br {
+    & br,
+    & .br-mobile {
       display: none;
     }
   }
