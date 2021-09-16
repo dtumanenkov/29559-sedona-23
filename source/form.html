@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
+
     <header class="container page-header">
       <a class="page-header__logo page-header__logo--nojs" href="index.html">
         <picture>
@@ -21,17 +22,16 @@
         </picture>
       </a>
       <nav class="page-header__nav page-header__nav--nojs main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__toggle main-nav__toggle--close visually-hidden" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Кнопка мобильного меню</span></button>
         <ul class="main-nav__list site-list site-list--mobile site-list--nojs">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзыва</a>
+            <a class="site-list__link site-list__link--current" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Htmlacademy</a>
@@ -51,8 +51,8 @@
       <section class="page-main__feedback feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback__form default-form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="feedback__form--wrapper">
-            <fieldset class="default-form__fieldset default-form__fieldset--person feedback__fieldset--person">
+          <div class="feedback__form feedback__form--wrapper">
+            <fieldset class="default-form__fieldset default-form__fieldset--person feedback__fieldset feedback__fieldset--person">
               <legend class="default-form__title default-form__title--person">Представьтесь:</legend>
               <ul class="default-form__list">
                 <li class="default-form__item">
@@ -66,18 +66,18 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--contacts feedback__fieldset--contacts">
+            <fieldset class="default-form__fieldset default-form__fieldset--contacts feedback__fieldset feedback__fieldset--contacts">
               <legend class="default-form__title default-form__title--contacts">Контактная информация:</legend>
               <ul class="default-form__list default-form__list--contacts">
                 <li class="default-form__item default-form__item--contacts">
-                  <label class="default-form__label--contacts" for="phone"><span class="default-form__span">Контактный </span>телефон*:</label>
+                  <label class="default-form__label default-form__label--contacts" for="phone"><span class="default-form__span">Контактный </span>телефон*:</label>
                   <div class="default-form__text-input-wrapper">
                     <input class="default-form__input default-form__input--phone" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
                     <div class="default-form__icon default-form__icon--phone"></div>
                   </div>
                 </li>
                 <li class="default-form__item default-form__item--contacts">
-                  <label class="default-form__label--contacts default-form__label--contacts-right" for="email">Электронная почта*:</label>
+                  <label class="default-form__label default-form__label--contacts default-form__label--contacts-right" for="email">Электронная почта*:</label>
                   <div class="default-form__text-input-wrapper">
                     <input class="default-form__input default-form__input--phone" type="email" placeholder="Введите e-mail" name="email" id="email" required>
                     <div class="default-form__icon default-form__icon--email"></div>
@@ -85,45 +85,45 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--impression feedback__fieldset--impression">
+            <fieldset class="default-form__fieldset default-form__fieldset--impression feedback__fieldset feedback__fieldset--impression">
               <legend class="default-form__title">Ваше общее впечатление:</legend>
               <ul class="default-form__list default-form__list--impression">
                 <li class="default-form__item default-form__item--impression">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-positive" checked value="positive">
-                  <label class="default-form__label--radio" for="filter-positive">Скорее положительное</label>
+                  <label class="default-form__label default-form__label--radio" for="filter-positive">Скорее положительное</label>
                 </li>
                 <li class="default-form__item default-form__item--impression">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-negative" value="negative">
-                  <label class="default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
+                  <label class="default-form__label default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
                 </li>
                 <li class="default-form__item default-form__item--impression">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
-                  <label class="default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
+                  <label class="default-form__label default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--landmark feedback__fieldset--landmark">
+            <fieldset class="default-form__fieldset default-form__fieldset--landmark feedback__fieldset feedback__fieldset--landmark">
               <legend class="default-form__title default-form__title--landmark">Посещенные достопримечательности:</legend>
               <ul class="default-form__list default-form__list--landmark">
                 <li class="default-form__item default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
-                  <label class="default-form__label--checkbox" for="filter-slider">Мост Дьявола</label>
+                  <label class="default-form__label default-form__label--checkbox" for="filter-slider">Мост Дьявола</label>
                 </li>
                 <li class="default-form__item default-form__item--landmark">
-                  <input class="visually-hidden default-form__checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
-                  <label class="default-form__label--checkbox" for="filter-advantages">Гора-Колокол</label>
+                  <input class="visually-hidden default-form__checkbox" type="checkbox" name="advantages" id="filter-advantages" checked value="advantages">
+                  <label class="default-form__label default-form__label--checkbox" for="filter-advantages">Гора-Колокол</label>
                 </li>
                 <li class="default-form__item default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
-                  <label class="default-form__label--checkbox" for="filter-news">Слайд-парк</label>
+                  <label class="default-form__label default-form__label--checkbox" for="filter-news">Слайд-парк</label>
                 </li>
                 <li class="default-form__item default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
-                  <label class="default-form__label--checkbox" for="filter-gallery">Красные скалы</label>
+                  <label class="default-form__label default-form__label--checkbox" for="filter-gallery">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--emotions feedback__fieldset--emotions">
+            <fieldset class="default-form__fieldset default-form__fieldset--emotions feedback__fieldset feedback__fieldset--emotions">
               <legend class="default-form__title default-form__title--emotions">Опишите свои эмоции:</legend>
               <textarea class="default-form__textarea" required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea>
             </fieldset>
@@ -143,32 +143,40 @@
         </form>
       </section>
     </main>
-    <footer class="container page-footer page-footer--catalog">
-      <div class="page-footer__wrapper page-footer__wrapper--catalog">
+    <footer class="container page-footer">
+      <div class="page-footer__wrapper">
         <a class="page-footer__hashtag-link" href="#">
           <span class="page-footer__hashtag">#visitsedona</span>
         </a>
         <ul class="social-links">
           <li class="social-links__item">
-            <a class="social-links__link social-links__link--twitter" href="https://twitter.com/">
-              <span class="visually-hidden">Седона в Твитере</span>
+            <a class="social-links__link" href="https://twitter.com/" aria-label="Седона в Твитере">
+              <svg class="social__icon" width="18" height="15" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link social-links__link--facebook" href="https://facebook.com/">
-              <span class="visually-hidden">Седона в Фейсбуке</span>
+            <a class="social-links__link" href="https://facebook.com/" aria-label="Седона в Фейсбуке">
+              <svg class="social__icon" width="9" height="19" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link social-links__link--youtube" href="https://youtube.com/">
-              <span class="visually-hidden">Седона в Ютуб</span>
+            <a class="social-links__link" href="https://youtube.com/" aria-label="Седона в Ютуб">
+              <svg class="social__icon" width="20" height="14" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <p class="copyright"><span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Ссылка на сайт Htmlacademy">
+            <svg class="copyright__icon" width="27" height="35" tabindex="0">
+              <use xlink:href="#icon-academy"></use>
+            </svg>
           </a>
         </p>
       </div>

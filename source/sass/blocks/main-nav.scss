@@ -8,9 +8,6 @@
   position: absolute;
   right: 0;
   transform: translate(-100%, 80%);
-  background-color: $basic-white;
-  background-image: url("../img/burger.svg");
-  background-repeat: no-repeat;
   border: 0;
 
   &:hover {
@@ -23,6 +20,17 @@
     opacity: 0.3;
     background-color: transparent;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--open {
+  background-color: $basic-white;
+  background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     display: none;

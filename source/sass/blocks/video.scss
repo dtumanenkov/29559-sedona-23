@@ -176,32 +176,37 @@
 .video__button--replay {
   width: 16px;
   height: 20px;
-  margin-left: 24px;
-  background: transparent url("../img/replay.svg") no-repeat;
+  margin-left: 19px;
+  color: $mobile-video-controls;
 
   &:hover {
-    background-image: url("../img/replay-hover.svg");
+    color: $dark-gray;
   }
 
   &:active {
-    background-image: url("../img/replay-active.svg");
+    color: rgba($color: $dark-gray, $alpha: 0.3);
   }
 
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 38px;
-    left: 11px;
-    background: transparent url("../img/replay-tablet.svg") no-repeat;
+    left: 9px;
+    background-color: transparent;
+    color: $basic-white;
     z-index: 3;
 
     &:hover {
-      background-image: url("../img/replay-tablet-hover.svg");
+      color: rgba($color: $basic-white, $alpha: 0.6);
     }
 
     &:active {
-      background-image: url("../img/replay-tablet-active.svg");
+      color: rgba($color: $basic-white, $alpha: 0.3);
     }
   }
+}
+
+.video__replay {
+  fill: currentColor;
 }
 
 .video__button--subs {
@@ -209,60 +214,71 @@
   height: 20px;
   margin-right: 32px;
   margin-left: auto;
-  background: transparent url("../img/subtitles.svg") no-repeat;
+  color: $mobile-video-controls;
 
   &:hover {
-    background-image: url("../img/subtitles-hover.svg");
+    color: $dark-gray;
   }
 
   &:active {
-    background-image: url("../img/subtitles-active.svg");
+    color: rgba($color: $dark-gray, $alpha: 0.3);
   }
+
 
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 38px;
-    right: 60px;
-    background: transparent  url("../img/subtitles-tablet.svg") no-repeat;
+    right: 67px;
+    background-color: transparent;
     z-index: 3;
+    color: $basic-white;
 
     &:hover {
-      background-image: url("../img/subtitles-tablet-hover.svg");
+      color: rgba($color: $basic-white, $alpha: 0.6);
     }
 
     &:active {
-      background-image: url("../img/subtitles-tablet-active.svg");
+      color: rgba($color: $basic-white, $alpha: 0.3);
     }
   }
+}
+
+.video__subtitles {
+  fill: currentColor;
 }
 
 .video__button--fullscreen {
   width: 20px;
   height: 20px;
-  margin-right: 22px;
-  background: transparent url("../img/fullscreen.svg") no-repeat;
+  margin-right: 28px;
+  color: $mobile-video-controls;
 
   &:hover {
-    background-image: url("../img/fullscreen-hover.svg");
+    color: $dark-gray;
   }
 
   &:active {
-    background-image: url("../img/fullscreen-active.svg");
+    color: rgba($color: $dark-gray, $alpha: 0.3);
   }
 
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 38px;
-    right: 19px;
-    background: transparent  url("../img/fullscreen-tablet.svg") no-repeat;
+    right: 20px;
+    background-color: transparent;
     z-index: 3;
+    color: $basic-white;
 
     &:hover {
-      background-image: url("../img/fullscreen-hover-tablet.svg");
+      color: rgba($color: $basic-white, $alpha: 0.6);
     }
 
     &:active {
-      background-image: url("../img/fullscreen-active-tablet.svg");
+      color: rgba($color: $basic-white, $alpha: 0.3);
     }
   }
+}
+
+.video__fullscreen {
+  fill: currentColor;
 }
