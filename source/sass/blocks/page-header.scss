@@ -88,7 +88,7 @@
   position: relative;
   width: 320px;
   height: 389px;
-  background: $basic-white url("../img/back-mobile.jpg") no-repeat center top;
+  background: $basic-blue url("../img/back-mobile.jpg") no-repeat center top;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
@@ -120,7 +120,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 518px;
-    background: $basic-white url("../img/back-tablet.jpg") no-repeat center top;
+    background: $basic-blue url("../img/back-tablet.jpg") no-repeat center top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -146,7 +146,7 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 518px;
-    background: $basic-white url("../img/back-desktop.jpg") no-repeat center top;
+    background: $basic-blue url("../img/back-desktop.jpg") no-repeat center top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
@@ -177,7 +177,7 @@
 .page-header__greeting--catalog,
 .page-header__greeting--form {
   height: 158px;
-  background: $basic-white url("../img/back-mobile-inner.jpg") no-repeat center top;
+  background: $basic-blue url("../img/back-mobile-inner.jpg") no-repeat center top;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile-inner@2x.jpg");

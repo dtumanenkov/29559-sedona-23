@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     align-items: center;
     box-shadow: none;
+    overflow-y: hidden;
   }
 
   @media (min-width: $desktop-width) {

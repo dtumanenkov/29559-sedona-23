@@ -354,7 +354,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
   }
@@ -511,6 +511,10 @@
   padding-left: 21px;
 }
 
+.default-form__input::placeholder {
+  color: $basic-black;
+}
+
 .default-form__input:hover {
   background-color: $gray-button-down;
 }
@@ -523,6 +527,10 @@
   border: 4px solid $gray-catalog-separator;
   outline: 0;
   border-radius: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 231px;
+  }
 }
 
 .default-form__input--phone {
@@ -606,6 +614,14 @@
   border-color: $gray-button-down;
 }
 
+.default-form__radio:focus + label::before,
+.default-form__checkbox:focus + label::before,
+.default-form__radio:checked:focus + label::before,
+.default-form__checkbox:checked:focus + label::before {
+  background-color: $gray-button-down;
+  border-color: $gray-button-down;
+}
+
 .default-form__radio:checked:active + label::after {
   border-color: rgba($color: $dark-gray, $alpha: 0.3);
   background-color: rgba($color: $dark-gray, $alpha: 0.3);
@@ -637,6 +653,10 @@
 
 .default-form__checkbox:checked:active + label::after {
   background: $gray-button-down url("../img/tick-active.svg") no-repeat center;
+  border-color: $gray-button-down;
+}
+
+.default-form__checkbox:checked:focus + label::after {
   border-color: $gray-button-down;
 }
 
