@@ -50,8 +50,8 @@
       <section class="page-main__feedback feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback__form default-form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="feedback__form--wrapper">
-            <fieldset class="default-form__fieldset default-form__fieldset--person feedback__fieldset--person">
+          <div class="feedback__form feedback__form--wrapper">
+            <fieldset class="default-form__fieldset default-form__fieldset--person feedback__fieldset feedback__fieldset--person">
               <legend class="default-form__title default-form__title--person">Представьтесь:</legend>
               <ul class="default-form__list">
                 <li class="default-form__item">
@@ -65,18 +65,18 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--contacts feedback__fieldset--contacts">
+            <fieldset class="default-form__fieldset default-form__fieldset--contacts feedback__fieldset feedback__fieldset--contacts">
               <legend class="default-form__title default-form__title--contacts">Контактная информация:</legend>
               <ul class="default-form__list default-form__list--contacts">
                 <li class="default-form__item default-form__item--contacts">
-                  <label class="default-form__label--contacts" for="phone"><span class="default-form__span">Контактный </span>телефон*:</label>
+                  <label class="default-form__label default-form__label--contacts" for="phone"><span class="default-form__span">Контактный </span>телефон*:</label>
                   <div class="default-form__text-input-wrapper">
                     <input class="default-form__input default-form__input--phone" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
                     <div class="default-form__icon default-form__icon--phone"></div>
                   </div>
                 </li>
                 <li class="default-form__item default-form__item--contacts">
-                  <label class="default-form__label--contacts default-form__label--contacts-right" for="email">Электронная почта*:</label>
+                  <label class="default-form__label default-form__label--contacts default-form__label--contacts-right" for="email">Электронная почта*:</label>
                   <div class="default-form__text-input-wrapper">
                     <input class="default-form__input default-form__input--phone" type="email" placeholder="Введите e-mail" name="email" id="email" required>
                     <div class="default-form__icon default-form__icon--email"></div>
@@ -84,45 +84,45 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--impression feedback__fieldset--impression">
+            <fieldset class="default-form__fieldset default-form__fieldset--impression feedback__fieldset feedback__fieldset--impression">
               <legend class="default-form__title">Ваше общее впечатление:</legend>
               <ul class="default-form__list default-form__list--impression">
                 <li class="default-form__item default-form__item--impression">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-positive" checked value="positive">
-                  <label class="default-form__label--radio" for="filter-positive">Скорее положительное</label>
+                  <label class="default-form__label default-form__label--radio" for="filter-positive">Скорее положительное</label>
                 </li>
                 <li class="default-form__item default-form__item--impression">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-negative" value="negative">
-                  <label class="default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
+                  <label class="default-form__label default-form__label--radio" for="filter-negative">Скорее отрицательное</label>
                 </li>
                 <li class="default-form__item default-form__item--impression">
                   <input class="visually-hidden default-form__radio" type="radio" name="radio" id="filter-dont-know" value="dont-know">
-                  <label class="default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
+                  <label class="default-form__label default-form__label--radio" for="filter-dont-know">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--landmark feedback__fieldset--landmark">
+            <fieldset class="default-form__fieldset default-form__fieldset--landmark feedback__fieldset feedback__fieldset--landmark">
               <legend class="default-form__title default-form__title--landmark">Посещенные достопримечательности:</legend>
               <ul class="default-form__list default-form__list--landmark">
                 <li class="default-form__item default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
-                  <label class="default-form__label--checkbox" for="filter-slider">Мост Дьявола</label>
+                  <label class="default-form__label default-form__label--checkbox" for="filter-slider">Мост Дьявола</label>
                 </li>
                 <li class="default-form__item default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
-                  <label class="default-form__label--checkbox" for="filter-advantages">Гора-Колокол</label>
+                  <label class="default-form__label default-form__label--checkbox" for="filter-advantages">Гора-Колокол</label>
                 </li>
                 <li class="default-form__item default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
-                  <label class="default-form__label--checkbox" for="filter-news">Слайд-парк</label>
+                  <label class="default-form__label default-form__label--checkbox" for="filter-news">Слайд-парк</label>
                 </li>
                 <li class="default-form__item default-form__item--landmark">
                   <input class="visually-hidden default-form__checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
-                  <label class="default-form__label--checkbox" for="filter-gallery">Красные скалы</label>
+                  <label class="default-form__label default-form__label--checkbox" for="filter-gallery">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="default-form__fieldset default-form__fieldset--emotions feedback__fieldset--emotions">
+            <fieldset class="default-form__fieldset default-form__fieldset--emotions feedback__fieldset feedback__fieldset--emotions">
               <legend class="default-form__title default-form__title--emotions">Опишите свои эмоции:</legend>
               <textarea class="default-form__textarea" required name="review" placeholder="Опишите подробно все свои восторги" id="review"></textarea>
             </fieldset>
