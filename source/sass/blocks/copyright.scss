@@ -55,9 +55,11 @@
 }
 
 .copyright__icon:hover {
-  background: transparent url("../img/htmlacademy-hover.svg") no-repeat center;
+  fill: $basic-blue;
 }
 
+.copyright__icon:active,
 .copyright__icon:focus {
-  outline: 2px solid $basic-black;
+  fill: rgba($color: $basic-black, $alpha: 0.3);
+  outline: none;
 }
