@@ -511,6 +511,10 @@
   padding-left: 21px;
 }
 
+.default-form__input::placeholder {
+  color: $basic-black;
+}
+
 .default-form__input:hover {
   background-color: $gray-button-down;
 }
