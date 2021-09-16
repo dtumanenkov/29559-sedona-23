@@ -614,6 +614,14 @@
   border-color: $gray-button-down;
 }
 
+.default-form__radio:focus + label::before,
+.default-form__checkbox:focus + label::before,
+.default-form__radio:checked:focus + label::before,
+.default-form__checkbox:checked:focus + label::before {
+  background-color: $gray-button-down;
+  border-color: $gray-button-down;
+}
+
 .default-form__radio:checked:active + label::after {
   border-color: rgba($color: $dark-gray, $alpha: 0.3);
   background-color: rgba($color: $dark-gray, $alpha: 0.3);
@@ -645,6 +653,10 @@
 
 .default-form__checkbox:checked:active + label::after {
   background: $gray-button-down url("../img/tick-active.svg") no-repeat center;
+  border-color: $gray-button-down;
+}
+
+.default-form__checkbox:checked:focus + label::after {
   border-color: $gray-button-down;
 }
 

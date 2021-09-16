@@ -57,3 +57,7 @@
 .copyright__icon:hover {
   background: transparent url("../img/htmlacademy-hover.svg") no-repeat center;
 }
+
+.copyright__icon:focus {
+  outline: 2px solid $basic-black;
+}
