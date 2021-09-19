@@ -687,9 +687,9 @@
 
 .default-form__message {
   width: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 38px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 20px;
   padding-top: 25px;
   line-height: 24px;
   margin: 0;
@@ -703,6 +703,8 @@
 }
 
 .default-form__message--sucсess {
+  padding-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     padding-top: 31px;
     padding-bottom: 46px;
@@ -747,6 +749,7 @@
 
 .default-form__button--popup {
   width: 180px;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
     width: 276px;
