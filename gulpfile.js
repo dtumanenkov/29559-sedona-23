@@ -81,6 +81,16 @@ const optimizeImages = () => {
 
 exports.optimizeImages = optimizeImages;
 
+// WebP
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img/webp"))
+}
+
+exports.createWebp = createWebp;
+
 // Copy images
 
 const copyImages = () => {
@@ -153,7 +163,7 @@ const build = gulp.series(
   clean,
   copyFiles,
   optimizeImages,
-  gulp.parallel(minHTML, minStyles, minScripts)
+  gulp.parallel(minHTML, minStyles, minScripts, createWebp)
 );
 
 exports.build = build;
@@ -164,6 +174,6 @@ exports.default = gulp.series(
   clean,
   copyFiles,
   copyImages,
-  gulp.parallel(minHTML, minStyles, minScripts),
+  gulp.parallel(minHTML, minStyles, minScripts, createWebp),
   gulp.series(server, watcher)
 );
